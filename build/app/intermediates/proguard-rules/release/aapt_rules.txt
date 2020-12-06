@@ -1,40 +1,42 @@
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:27
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:29
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:184
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:192
 -keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:86
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:94
 -keep class androidx.work.impl.WorkManagerInitializer { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:115
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:123
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:125
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:133
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:145
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:153
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:135
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:143
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:165
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:173
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:154
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:162
 -keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:93
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:101
 -keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:98
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:106
 -keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:104
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:112
 -keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:110
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:118
 -keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:77
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:78
+-keep class com.almoullim.background_location.LocationUpdatesService { <init>(); }
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:85
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:76
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:84
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:32
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:34
 -keep class com.example.BOB_corona_slayer.MainActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:175
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:183
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:74
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:76
 -keep class de.mintware.barcode_scan.BarcodeScannerActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:27
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:29
 -keep class io.flutter.app.FlutterApplication { <init>(); }
 # Referenced at C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\res\layout\abc_alert_dialog_title_material.xml:56
 # Referenced at C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\res\layout\abc_alert_dialog_material.xml:52

@@ -5,7 +5,7 @@ class Notification {
 
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
 
-  Future showNotificationWithoutSound(Position position) async {
+  Future showNotificationWithoutSound(String position) async {
     var androidPlatformChannelSpecifics = new AndroidNotificationDetails(
         '1', 'location-bg', 'fetch location in background',
         playSound: false, importance: Importance.max, priority: Priority.high);
@@ -18,7 +18,7 @@ class Notification {
     await flutterLocalNotificationsPlugin.show(
       0,
       '위치를 수집중입니다.',
-      '현재위치: ' + position.toString(),
+      '현재위치: $position',
       platformChannelSpecifics,
       payload: '',
     );

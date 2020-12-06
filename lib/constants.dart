@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:BOB_corona_slayer/size_config.dart';
 
@@ -20,7 +22,18 @@ final headingStyle = TextStyle(
   height: 1.5,
 );
 
+var userDB;
+var GPSDB;
 const defaultDuration = Duration(milliseconds: 250);
+
+const String userInfo = "userDB";
+const String userID = "ID";
+const String userName = "name";
+const String userType = "type";
+const String GPSInfo = "GPS";
+const String userAccessToken = "accessToken";
+const String userRefreshToken = "refreshToken";
+
 
 // Form Error
 final RegExp emailValidatorRegExp =
@@ -57,3 +70,9 @@ OutlineInputBorder outlineInputBorder() {
     borderSide: BorderSide(color: kTextColor),
   );
 }
+
+
+int leftSecond;
+String qrText;
+
+StreamSubscription timeHandler;

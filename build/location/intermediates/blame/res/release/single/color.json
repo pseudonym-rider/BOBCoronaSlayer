@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
         "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\c14f0fc73f924c8cb6714d7484aa47ea\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
-        "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\c14f0fc73f924c8cb6714d7484aa47ea\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\c14f0fc73f924c8cb6714d7484aa47ea\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\c14f0fc73f924c8cb6714d7484aa47ea\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\location\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\c14f0fc73f924c8cb6714d7484aa47ea\\jetified-play-services-base-16.0.1\\res\\color\\common_google_signin_btn_tint.xml"
     }
 ]

@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-66
+14-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-64
 15    <!--
 16     io.flutter.app.FlutterApplication is an android.app.Application that
 17         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -21,331 +21,345 @@
 19         additional functionality it is fine to subclass or reimplement
 20         FlutterApplication and put your custom class here.
 21    -->
-22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-22-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:8:5-79
-22-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:8:22-76
-23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-23-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:9:5-81
-23-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:9:22-78
-24    <uses-permission android:name="android.permission.CAMERA" />
-24-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
-24-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
-25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-25-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-25-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
-26    <uses-permission android:name="android.permission.VIBRATE" />
-26-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
-26-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
-27    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-27-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
-27-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
-28    <uses-permission android:name="android.permission.WAKE_LOCK" />
-28-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:25:5-68
-28-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:25:22-65
-29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-29-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:26:5-79
-29-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:26:22-76
-30    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-30-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
-30-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:22-74
-31
-32    <application
-32-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:10:5-48:19
-33        android:name="io.flutter.app.FlutterApplication"
-33-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:11:9-57
-34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.3.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\65fd00bb7753452a02d198555191de3e\core-1.3.0\AndroidManifest.xml:24:18-86
-35        android:debuggable="true"
-36        android:icon="@mipmap/ic_launcher"
-36-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:13:9-43
-37        android:label="BOB_corona_slayer" >
-37-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:12:9-42
-38        <activity
-38-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:14:9-42:20
-39            android:name="com.example.BOB_corona_slayer.MainActivity"
-39-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:15:13-41
-40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-40-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:18:13-163
-41            android:hardwareAccelerated="true"
-41-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:19:13-47
-42            android:launchMode="singleTop"
-42-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:16:13-43
-43            android:theme="@style/LaunchTheme"
-43-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:17:13-47
-44            android:windowSoftInputMode="adjustResize" >
-44-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:20:13-55
-45
-46            <!--
-47                 Specifies an Android theme to apply to this Activity as soon as
-48                 the Android process has started. This theme is visible to the user
-49                 while the Flutter UI initializes. After that, this theme continues
-50                 to determine the Window background behind the Flutter UI.
-51            -->
-52            <meta-data
-52-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:25:13-28:17
-53                android:name="io.flutter.embedding.android.NormalTheme"
-53-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:26:15-70
-54                android:resource="@style/NormalTheme" />
-54-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:27:15-52
-55            <!--
-56                 Displays an Android View that continues showing the launch screen
-57                 Drawable until Flutter paints its first frame, then this splash
-58                 screen fades out. A splash screen is useful to avoid any visual
-59                 gap between the end of Android's launch screen and the painting of
-60                 Flutter's first frame.
-61            -->
-62            <meta-data
-62-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:34:13-37:17
-63                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-63-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:35:15-79
-64                android:resource="@drawable/launch_background" />
-64-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:36:15-61
-65
-66            <intent-filter>
-66-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:38:13-41:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:39:17-68
-67-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:39:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:40:17-76
-69-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:40:27-74
-70            </intent-filter>
-71        </activity>
-72        <!--
-73             Don't delete the meta-data below.
-74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-75        -->
-76        <meta-data
-76-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:45:9-47:33
-77            android:name="flutterEmbedding"
-77-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:46:13-44
-78            android:value="2" />
-78-->C:\Users\dldms\AndroidStudioProjects\flutterApp-master\android\app\src\main\AndroidManifest.xml:47:13-30
-79
-80        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
-80-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
-80-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
-81
-82        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
-82-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
-82-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
-83        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
-83-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
-83-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
-84            <intent-filter>
-84-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
-85                <action android:name="android.intent.action.BOOT_COMPLETED" />
-85-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
-85-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
-86                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-86-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
-86-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
-87                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-87-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
-87-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
-88                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-88-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
-88-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
-89            </intent-filter>
-90        </receiver>
-91
-92        <activity
-92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-93            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-94            android:exported="false"
-94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-96
-97        <meta-data
-97-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-98            android:name="com.google.android.gms.version"
-98-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-99            android:value="@integer/google_play_services_version" />
-99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-100
-101        <provider
-101-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:31:9-37:35
-102            android:name="androidx.work.impl.WorkManagerInitializer"
-102-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:32:13-69
-103            android:authorities="com.pseudonymRider.BOB_corona_slayer.workmanager-init"
-103-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:33:13-68
-104            android:directBootAware="false"
-104-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:34:13-44
-105            android:exported="false"
-105-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:35:13-37
-106            android:multiprocess="true" />
-106-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:36:13-40
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-81
+22-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-78
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-79
+23-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-77
+24-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-74
+25    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+25-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-84
+25-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-82
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
+26-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
+27    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+27-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+27-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+28    <uses-permission android:name="android.permission.VIBRATE" />
+28-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+28-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+29    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+29-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+29-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+30    <uses-permission android:name="android.permission.WAKE_LOCK" />
+30-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:25:5-68
+30-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:25:22-65
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:26:5-79
+31-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:26:22-76
+32
+33    <application
+33-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:13:5-51:19
+34        android:name="io.flutter.app.FlutterApplication"
+34-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:14:9-57
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.3.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\65fd00bb7753452a02d198555191de3e\core-1.3.0\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:16:9-43
+38        android:label="BOB_corona_slayer" >
+38-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:15:9-42
+39        <activity
+39-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:17:9-45:20
+40            android:name="com.example.BOB_corona_slayer.MainActivity"
+40-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:18:13-41
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:21:13-163
+42            android:hardwareAccelerated="true"
+42-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:22:13-47
+43            android:launchMode="singleTop"
+43-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:19:13-43
+44            android:theme="@style/LaunchTheme"
+44-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:20:13-47
+45            android:windowSoftInputMode="adjustResize" >
+45-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:23:13-55
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+53-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:28:13-31:17
+54                android:name="io.flutter.embedding.android.NormalTheme"
+54-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:29:15-70
+55                android:resource="@style/NormalTheme" />
+55-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:30:15-52
+56            <!--
+57                 Displays an Android View that continues showing the launch screen
+58                 Drawable until Flutter paints its first frame, then this splash
+59                 screen fades out. A splash screen is useful to avoid any visual
+60                 gap between the end of Android's launch screen and the painting of
+61                 Flutter's first frame.
+62            -->
+63            <meta-data
+63-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:37:13-40:17
+64                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+64-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:38:15-79
+65                android:resource="@drawable/launch_background" />
+65-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:39:15-61
+66
+67            <intent-filter>
+67-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:41:13-44:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:42:17-68
+68-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:42:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:43:17-76
+70-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:43:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:48:9-50:33
+78            android:name="flutterEmbedding"
+78-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:49:13-44
+79            android:value="2" />
+79-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:50:13-30
+80
+81        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
+81-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
+81-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
+82
+83        <service
+83-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:37
+84            android:name="com.almoullim.background_location.LocationUpdatesService"
+84-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-84
+85            android:enabled="true"
+85-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-35
+86            android:exported="true"
+86-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-36
+87            android:permission="" />
+87-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-34
+88
+89        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+89-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
+89-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
+90        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+90-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
+90-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
+91            <intent-filter>
+91-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
+92                <action android:name="android.intent.action.BOOT_COMPLETED" />
+92-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
+92-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
+93                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+93-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
+93-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
+94                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+94-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
+94-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
+95                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+95-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
+95-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
+96            </intent-filter>
+97        </receiver>
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 107
-108        <service
-108-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:39:9-44:35
-109            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
-109-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:40:13-88
-110            android:directBootAware="false"
-110-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:41:13-44
-111            android:enabled="@bool/enable_system_alarm_service_default"
-111-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:42:13-72
-112            android:exported="false" />
-112-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:43:13-37
-113        <service
-113-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:45:9-51:35
-114            android:name="androidx.work.impl.background.systemjob.SystemJobService"
-114-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:46:13-84
-115            android:directBootAware="false"
-115-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:47:13-44
-116            android:enabled="@bool/enable_system_job_service_default"
-116-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:48:13-70
-117            android:exported="true"
-117-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:49:13-36
-118            android:permission="android.permission.BIND_JOB_SERVICE" />
-118-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:50:13-69
-119        <service
-119-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:52:9-57:35
-120            android:name="androidx.work.impl.foreground.SystemForegroundService"
-120-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:53:13-81
-121            android:directBootAware="false"
-121-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:54:13-44
-122            android:enabled="@bool/enable_system_foreground_service_default"
-122-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:55:13-77
-123            android:exported="false" />
-123-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:56:13-37
-124
-125        <receiver
-125-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:59:9-64:35
-126            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
-126-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:60:13-88
-127            android:directBootAware="false"
-127-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:61:13-44
-128            android:enabled="true"
-128-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:62:13-35
-129            android:exported="false" />
-129-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:63:13-37
-130        <receiver
-130-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:65:9-75:20
-131            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
-131-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:66:13-106
-132            android:directBootAware="false"
-132-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:67:13-44
-133            android:enabled="false"
-133-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:68:13-36
-134            android:exported="false" >
-134-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:69:13-37
-135            <intent-filter>
-135-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:71:13-74:29
-136                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-136-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:72:17-87
-136-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:72:25-84
-137                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-137-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:73:17-90
-137-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:73:25-87
-138            </intent-filter>
-139        </receiver>
-140        <receiver
-140-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:76:9-86:20
-141            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
-141-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:77:13-104
-142            android:directBootAware="false"
-142-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:78:13-44
-143            android:enabled="false"
-143-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:79:13-36
-144            android:exported="false" >
-144-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:80:13-37
-145            <intent-filter>
-145-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:82:13-85:29
-146                <action android:name="android.intent.action.BATTERY_OKAY" />
-146-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:83:17-77
-146-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:83:25-74
-147                <action android:name="android.intent.action.BATTERY_LOW" />
-147-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:84:17-76
-147-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:84:25-73
-148            </intent-filter>
-149        </receiver>
-150        <receiver
-150-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:87:9-97:20
-151            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
-151-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:88:13-104
-152            android:directBootAware="false"
-152-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:89:13-44
-153            android:enabled="false"
-153-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:90:13-36
-154            android:exported="false" >
-154-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:91:13-37
-155            <intent-filter>
-155-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:93:13-96:29
-156                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-156-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:94:17-83
-156-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:94:25-80
-157                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
-157-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:95:17-82
-157-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:95:25-79
-158            </intent-filter>
-159        </receiver>
-160        <receiver
-160-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:98:9-107:20
-161            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
-161-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:99:13-103
-162            android:directBootAware="false"
-162-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:100:13-44
-163            android:enabled="false"
-163-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:101:13-36
-164            android:exported="false" >
-164-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:102:13-37
-165            <intent-filter>
-165-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:104:13-106:29
-166                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-166-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:105:17-79
-166-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:105:25-76
-167            </intent-filter>
-168        </receiver>
-169        <receiver
-169-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:108:9-119:20
-170            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
-170-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:109:13-88
-171            android:directBootAware="false"
-171-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:110:13-44
-172            android:enabled="false"
-172-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:111:13-36
-173            android:exported="false" >
-173-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:112:13-37
-174            <intent-filter>
-174-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:114:13-118:29
-175                <action android:name="android.intent.action.BOOT_COMPLETED" />
-175-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
-175-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\flutterApp-master\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
-176                <action android:name="android.intent.action.TIME_SET" />
-176-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:116:17-73
-176-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:116:25-70
-177                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-177-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:117:17-81
-177-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:117:25-78
-178            </intent-filter>
-179        </receiver>
-180        <receiver
-180-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:120:9-129:20
-181            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
-181-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:121:13-99
-182            android:directBootAware="false"
-182-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:122:13-44
-183            android:enabled="@bool/enable_system_alarm_service_default"
-183-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:123:13-72
-184            android:exported="false" >
-184-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:124:13-37
-185            <intent-filter>
-185-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:126:13-128:29
-186                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
-186-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:127:17-98
-186-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:127:25-95
-187            </intent-filter>
-188        </receiver>
-189
-190        <service
-190-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-191            android:name="androidx.room.MultiInstanceInvalidationService"
-191-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-192            android:exported="false" />
-192-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-193    </application>
-194
-195</manifest>
+108        <provider
+108-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:31:9-37:35
+109            android:name="androidx.work.impl.WorkManagerInitializer"
+109-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:32:13-69
+110            android:authorities="com.pseudonymRider.BOB_corona_slayer.workmanager-init"
+110-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:33:13-68
+111            android:directBootAware="false"
+111-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:34:13-44
+112            android:exported="false"
+112-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:35:13-37
+113            android:multiprocess="true" />
+113-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:36:13-40
+114
+115        <service
+115-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:39:9-44:35
+116            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+116-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:40:13-88
+117            android:directBootAware="false"
+117-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:41:13-44
+118            android:enabled="@bool/enable_system_alarm_service_default"
+118-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:42:13-72
+119            android:exported="false" />
+119-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:43:13-37
+120        <service
+120-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:45:9-51:35
+121            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+121-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:46:13-84
+122            android:directBootAware="false"
+122-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:47:13-44
+123            android:enabled="@bool/enable_system_job_service_default"
+123-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:48:13-70
+124            android:exported="true"
+124-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:49:13-36
+125            android:permission="android.permission.BIND_JOB_SERVICE" />
+125-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:50:13-69
+126        <service
+126-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:52:9-57:35
+127            android:name="androidx.work.impl.foreground.SystemForegroundService"
+127-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:53:13-81
+128            android:directBootAware="false"
+128-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:54:13-44
+129            android:enabled="@bool/enable_system_foreground_service_default"
+129-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:55:13-77
+130            android:exported="false" />
+130-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:56:13-37
+131
+132        <receiver
+132-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:59:9-64:35
+133            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+133-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:60:13-88
+134            android:directBootAware="false"
+134-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:61:13-44
+135            android:enabled="true"
+135-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:62:13-35
+136            android:exported="false" />
+136-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:63:13-37
+137        <receiver
+137-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:65:9-75:20
+138            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+138-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:66:13-106
+139            android:directBootAware="false"
+139-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:67:13-44
+140            android:enabled="false"
+140-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:68:13-36
+141            android:exported="false" >
+141-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:69:13-37
+142            <intent-filter>
+142-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:71:13-74:29
+143                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+143-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:72:17-87
+143-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:72:25-84
+144                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+144-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:73:17-90
+144-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:73:25-87
+145            </intent-filter>
+146        </receiver>
+147        <receiver
+147-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:76:9-86:20
+148            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+148-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:77:13-104
+149            android:directBootAware="false"
+149-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:78:13-44
+150            android:enabled="false"
+150-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:79:13-36
+151            android:exported="false" >
+151-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:80:13-37
+152            <intent-filter>
+152-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:82:13-85:29
+153                <action android:name="android.intent.action.BATTERY_OKAY" />
+153-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:83:17-77
+153-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:83:25-74
+154                <action android:name="android.intent.action.BATTERY_LOW" />
+154-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:84:17-76
+154-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:84:25-73
+155            </intent-filter>
+156        </receiver>
+157        <receiver
+157-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:87:9-97:20
+158            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+158-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:88:13-104
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:89:13-44
+160            android:enabled="false"
+160-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:90:13-36
+161            android:exported="false" >
+161-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:91:13-37
+162            <intent-filter>
+162-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:93:13-96:29
+163                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+163-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:94:17-83
+163-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:94:25-80
+164                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+164-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:95:17-82
+164-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:95:25-79
+165            </intent-filter>
+166        </receiver>
+167        <receiver
+167-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:98:9-107:20
+168            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+168-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:99:13-103
+169            android:directBootAware="false"
+169-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:100:13-44
+170            android:enabled="false"
+170-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:101:13-36
+171            android:exported="false" >
+171-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:102:13-37
+172            <intent-filter>
+172-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:104:13-106:29
+173                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+173-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:105:17-79
+173-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:105:25-76
+174            </intent-filter>
+175        </receiver>
+176        <receiver
+176-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:108:9-119:20
+177            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+177-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:109:13-88
+178            android:directBootAware="false"
+178-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:110:13-44
+179            android:enabled="false"
+179-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:111:13-36
+180            android:exported="false" >
+180-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:112:13-37
+181            <intent-filter>
+181-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:114:13-118:29
+182                <action android:name="android.intent.action.BOOT_COMPLETED" />
+182-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
+182-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
+183                <action android:name="android.intent.action.TIME_SET" />
+183-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:116:17-73
+183-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:116:25-70
+184                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+184-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:117:17-81
+184-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:117:25-78
+185            </intent-filter>
+186        </receiver>
+187        <receiver
+187-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:120:9-129:20
+188            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+188-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:121:13-99
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:122:13-44
+190            android:enabled="@bool/enable_system_alarm_service_default"
+190-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:123:13-72
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:124:13-37
+192            <intent-filter>
+192-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:126:13-128:29
+193                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+193-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:127:17-98
+193-->[androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:127:25-95
+194            </intent-filter>
+195        </receiver>
+196
+197        <service
+197-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+198            android:name="androidx.room.MultiInstanceInvalidationService"
+198-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+199            android:exported="false" />
+199-->[androidx.room:room-runtime:2.2.3] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fd4366af97dec283d5e051341755827f\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+200    </application>
+201
+202</manifest>

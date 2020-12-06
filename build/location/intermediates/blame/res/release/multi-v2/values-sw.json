@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\location\\intermediates\\res\\merged\\release\\values-sw\\values-sw.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\location\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\cac53315069219488e9b0c9a3ed921fc\\jetified-play-services-basement-16.0.1\\res\\values-sw\\values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\location\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw\\values-sw.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\location\\intermediates\\res\\merged\\release\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\cac53315069219488e9b0c9a3ed921fc\\jetified-play-services-basement-16.0.1\\res\\values-sw\\values.xml",

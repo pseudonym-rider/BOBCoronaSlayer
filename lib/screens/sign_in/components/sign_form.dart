@@ -26,7 +26,7 @@ class _SignFormState extends State<SignForm> {
 
   void showProgressDialog() async {
     pr.show();
-    Future.delayed(Duration(seconds: 0)).then((value) => pr.hide());
+    Future.delayed(Duration.zero).then((value) => pr.hide());
   }
 
   void addError({String error}) {
@@ -85,14 +85,21 @@ class _SignFormState extends State<SignForm> {
               showProgressDialog();
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                bool isLogin = await Login(ID, password);
-                if (!isLogin) {addError(error: kLoginFailError); return;}
+                Map isLogin = await Login(ID, password, remember);
+                if (isLogin == null) {addError(error: kLoginFailError); return;}
                 //Navigator.pushNamed(context, Home.routeName);
                 //나중에 bloc, provider 이용해서 코드좀 수정해야함.
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Home(ID),
+                    builder: (context) =>
+                        Home(
+                            ID,
+                            isLogin['user_name'],
+                            isLogin['type'],
+                            isLogin['access_token'],
+                            isLogin['refresh_token']
+                        ),
                   ),
                 );
               }

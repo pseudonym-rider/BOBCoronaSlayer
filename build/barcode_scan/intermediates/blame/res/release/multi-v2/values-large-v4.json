@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\barcode_scan\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\barcode_scan\\intermediates\\res\\merged\\release\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\dd2ecfcfb369a2f0046b9c1c6d80939e\\appcompat-1.0.2\\res\\values-large-v4\\values-large-v4.xml",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\flutterApp-master\\build\\barcode_scan\\intermediates\\res\\merged\\release\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\barcode_scan\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\dd2ecfcfb369a2f0046b9c1c6d80939e\\appcompat-1.0.2\\res\\values-large-v4\\values-large-v4.xml",

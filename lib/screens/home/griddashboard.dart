@@ -1,3 +1,5 @@
+import 'package:BOB_corona_slayer/constants.dart';
+import 'package:BOB_corona_slayer/services/commuication.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -6,6 +8,8 @@ import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
 import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
 
 class GridDashboard extends StatefulWidget {
+  String type;
+  GridDashboard(this.type);
   @override
   _GridDashboardState createState() => _GridDashboardState();
 }
@@ -18,21 +22,21 @@ class _GridDashboardState extends State<GridDashboard> {
       img: "assets/images/qrcode.jpg");
 
   Items item2 = new Items(
-    title: "QR Maker",
-    subtitle: "QR 코드를 생성합니다.",
-    img: "assets/images/qrcode.jpg",
-  );
-
-  Items item3 = new Items(
-    title: "Locations GPS",
-    subtitle: "실시간으로 동선정보를 저장합니다.",
+    title: "QR Roadmap",
+    subtitle: "QR 체크인했던 장소들을 확인합니다.",
     img: "assets/images/map.png",
   );
 
-  Items item4 = new Items(
-    title: "코로나19 정보",
-    subtitle: "코로나에 관련된 정보를 모아볼 수 있습니다.",
+  Items item3 = new Items(
+    title: "Corona19 Info",
+    subtitle: "내 지역의 확진자 상황을 확인합니다.",
     img: "assets/images/festival.png",
+  );
+
+  Items item4 = new Items(
+    title: "Infection check",
+    subtitle: "내 밀접접촉 여부를 확인합니다.",
+    img: "assets/images/todo.png",
   );
 
   Items item5 = new Items(
@@ -60,9 +64,12 @@ class _GridDashboardState extends State<GridDashboard> {
     super.initState();
     _getUserPosition();
   }
+
+
   @override
   Widget build(BuildContext context) {
-    List<Items> myList = [item1, item2, item3, item4, item5, item6];
+    List<Items> myList = [item1, item2, item3, item4, item6];
+    if(widget.type == "1") myList.remove(item1);
 
     var color = 0xff81c784;
     return Flexible(
@@ -77,11 +84,11 @@ class _GridDashboardState extends State<GridDashboard> {
               decoration: BoxDecoration(
                   color: Color(color), borderRadius: BorderRadius.circular(10)),
               child: InkWell(
-                onTap: () {
+                onTap: () async {
                   if (data.title == "QR Scan") {
-                    Navigator.pushNamed(context, ScanPage.routeName);
-                  } else if (data.title == "QR Maker") {
-                    Navigator.pushNamed(context, GeneratePage.routeName);
+                    changePageRoute(ScanPage.routeName);
+                  } else if (data.title == "QR Roadmap") {
+                    changePageRoute(GeneratePage.routeName);
                   } else if (data.title == "Locations GPS") {
                     //Navigator.pushNamed(context, GPSSaveAndBackground.routeName);
                     Navigator.push(
@@ -90,6 +97,8 @@ class _GridDashboardState extends State<GridDashboard> {
                         builder: (context) => GPSSaveAndBackground(position),
                       ),
                     );
+                  } else if (data.title == "Corona19 Info") {
+
                   }
                 },
                 child: Column(
@@ -130,6 +139,15 @@ class _GridDashboardState extends State<GridDashboard> {
             );
           }).toList()),
     );
+  }
+  changePageRoute(String routeName) async {
+    timeHandler.pause();
+    if(timeHandler.isPaused) {
+      leftSecond = 15;
+      qrText = createJWTToken();
+    }
+    final variable = await Navigator.pushNamed(context, routeName);
+    timeHandler.resume();
   }
 }
 

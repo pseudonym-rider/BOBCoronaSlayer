@@ -1288,14 +1288,14 @@ public final class R {
         public static final int fab_transformation_scrim_behavior = 0x7f0d003d;
         public static final int fab_transformation_sheet_behavior = 0x7f0d003e;
         public static final int hide_bottom_view_on_scroll_behavior = 0x7f0d003f;
-        public static final int mtrl_chip_close_icon_content_description = 0x7f0d0040;
-        public static final int password_toggle_content_description = 0x7f0d0041;
-        public static final int path_password_eye = 0x7f0d0042;
-        public static final int path_password_eye_mask_strike_through = 0x7f0d0043;
-        public static final int path_password_eye_mask_visible = 0x7f0d0044;
-        public static final int path_password_strike_through = 0x7f0d0045;
-        public static final int search_menu_title = 0x7f0d0046;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0047;
+        public static final int mtrl_chip_close_icon_content_description = 0x7f0d0041;
+        public static final int password_toggle_content_description = 0x7f0d0043;
+        public static final int path_password_eye = 0x7f0d0044;
+        public static final int path_password_eye_mask_strike_through = 0x7f0d0045;
+        public static final int path_password_eye_mask_visible = 0x7f0d0046;
+        public static final int path_password_strike_through = 0x7f0d0047;
+        public static final int search_menu_title = 0x7f0d004c;
+        public static final int status_bar_notification_info_overflow = 0x7f0d004e;
     }
     public static final class style {
         private style() {}

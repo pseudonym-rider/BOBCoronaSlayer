@@ -9,7 +9,7 @@ class LoginSuccessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox(),
-        title: Text("Login Success"),
+        title: Text("회원가입 완료"),
       ),
       body: Body(),
     );

@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
 import 'package:BOB_corona_slayer/screens/complete_profile/complete_profile_screen.dart';
-import 'package:BOB_corona_slayer/screens/details/details_screen.dart';
 import 'package:BOB_corona_slayer/screens/forgot_password/forgot_password_screen.dart';
 import 'package:BOB_corona_slayer/screens/login_success/login_success_screen.dart';
 import 'package:BOB_corona_slayer/screens/otp/otp_screen.dart';
 import 'package:BOB_corona_slayer/screens/sign_in/sign_in_screen.dart';
 import 'package:BOB_corona_slayer/screens/splash/splash_screen.dart';
+import 'constants.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
 import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
@@ -25,8 +25,7 @@ final Map<String, WidgetBuilder> routes = {
   OtpScreen.routeName: (context) => OtpScreen(),
   GeneratePage.routeName: (context) => GeneratePage(),
   ScanPage.routeName: (context) => ScanPage(),
-  //Home.routeName: (context) => Home(ID),
-  DetailsScreen.routeName: (context) => DetailsScreen(),
+  Home.routeName: (context) => Home(userDB.get(userID), userDB.get(userName), userDB.get(userType), userDB.get(userAccessToken), userDB.get(userRefreshToken)),
   //GpsTracker.routeName: (context) => GpsTracker(),
   //GPSSaveAndBackground.routeName: (context) => GPSSaveAndBackground(),
 };

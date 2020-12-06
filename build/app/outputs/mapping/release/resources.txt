@@ -38,8 +38,11 @@ Referenced Strings:
   %n
   %s
   %s.%sParcelizer
+  .broadcast
   .font
   .lck
+  .location
+  .started_from_notification
   .tmp
   .xml
   /proc/self/fd/
@@ -593,7 +596,7 @@ Referenced Strings:
   FlutterActivityDelegate
   FlutterBitmapAsset
   FlutterEngine
-  FlutterEngineConnectionRegistry
+  FlutterEnginePluginRegistry
   FlutterFragment
   FlutterFragmentActivity
   FlutterJNI
@@ -618,6 +621,7 @@ Referenced Strings:
   GB2312
   GBK
   GE
+  GENERIC_PREFERENCES
   GEOLOCATOR_PERMISSIONS_DENIED_FOREVER
   GET_ACTIVE_NOTIFICATIONS_ERROR_CODE
   GH
@@ -810,6 +814,7 @@ Referenced Strings:
   ListPopupWindow
   LoaderManager
   Loaders:
+  LocalBroadcastManager
   LocalizationChannel
   LocationClientImpl
   LocationServices.API
@@ -939,6 +944,7 @@ Referenced Strings:
   ON_START
   ON_STOP
   OPACITY
+  OP_POST_NOTIFICATION
   OP_SET_MAX_LIFECYCLE
   ORIENTATION
   OTHER
@@ -994,7 +1000,11 @@ Referenced Strings:
   Pacific/Guadalcanal
   PackageManagerHelper
   PathParser
+  PermissionHandler.AppSettingsManager
+  PermissionHandler.PermissionManager
+  PermissionHandler.ServiceManager
   PlatformChannel
+  PlatformPlugin
   PlatformViewsChannel
   PlatformViewsController
   PopupWindowCompatApi21
@@ -1375,6 +1385,7 @@ Referenced Strings:
   allScroll
   allocateInstance
   allowWhileIdle
+  almoullim.com/background_location
   alpha
   altitude
   always
@@ -1385,6 +1396,7 @@ Referenced Strings:
   android.graphics.FontFamily
   android.graphics.Insets
   android.graphics.drawable.VectorDrawable
+  android.hardware.telephony
   android.hardware.type.embedded
   android.hardware.type.iot
   android.hardware.type.watch
@@ -1395,6 +1407,7 @@ Referenced Strings:
   android.intent.action.BATTERY_LOW
   android.intent.action.BATTERY_OKAY
   android.intent.action.BOOT_COMPLETED
+  android.intent.action.CALL
   android.intent.action.DEVICE_STORAGE_LOW
   android.intent.action.DEVICE_STORAGE_OK
   android.intent.action.MY_PACKAGE_REPL...
@@ -1447,12 +1460,37 @@ Referenced Strings:
   android.permission.ACCESS_BACKGROUND_...
   android.permission.ACCESS_COARSE_LOCA...
   android.permission.ACCESS_FINE_LOCATION
+  android.permission.ACCESS_MEDIA_LOCATION
+  android.permission.ACTIVITY_RECOGNITION
+  android.permission.ANSWER_PHONE_CALLS
+  android.permission.BIND_CALL_REDIRECT...
+  android.permission.BODY_SENSORS
+  android.permission.CALL_PHONE
   android.permission.CAMERA
+  android.permission.GET_ACCOUNTS
+  android.permission.READ_CALENDAR
+  android.permission.READ_CALL_LOG
+  android.permission.READ_CONTACTS
+  android.permission.READ_EXTERNAL_STORAGE
+  android.permission.READ_PHONE_STATE
+  android.permission.READ_SMS
+  android.permission.RECEIVE_MMS
+  android.permission.RECEIVE_SMS
+  android.permission.RECEIVE_WAP_PUSH
+  android.permission.RECORD_AUDIO
+  android.permission.REQUEST_IGNORE_BAT...
+  android.permission.SEND_SMS
+  android.permission.USE_SIP
+  android.permission.WRITE_CALENDAR
+  android.permission.WRITE_CALL_LOG
+  android.permission.WRITE_CONTACTS
+  android.permission.WRITE_EXTERNAL_STO...
   android.resource
   android.resource://
   android.selfDisplayName
   android.settings.APPLICATION_DETAILS_...
   android.settings.LOCATION_SOURCE_SETT...
+  android.settings.REQUEST_IGNORE_BATTE...
   android.speech.action.RECOGNIZE_SPEECH
   android.speech.action.WEB_SEARCH
   android.speech.extra.LANGUAGE
@@ -1548,6 +1586,7 @@ Referenced Strings:
   app_data
   appcompat_skip_skip
   appendable
+  appops
   arch_disk_io_%d
   args
   assets/
@@ -1558,7 +1597,7 @@ Referenced Strings:
   autocorrect
   autofill
   b
-  b.n.e
+  b.o.e
   background
   backgroundChannel
   backgroundChannelInitialized
@@ -1576,6 +1615,7 @@ Referenced Strings:
   be.tramckrijte.workmanager.IS_IN_DEBU...
   be.tramckrijte.workmanager/background...
   be.tramckrijte.workmanager/foreground...
+  bearing
   best
   bestForNavigation
   bigPicture
@@ -1599,8 +1639,10 @@ Referenced Strings:
   bounceInterpolator
   boundsOrigin
   bp
+  broadcastReceiver
   buddhist
   buffer
+  builder
   c
   c:
   cached_engine_id
@@ -1621,14 +1663,19 @@ Referenced Strings:
   centerY
   cf029002fffdcadf079e8d0a1c9a70ac
   changeSettings
+  channel
   channelAction
   channelDescription
   channelId
   channelName
   channelShowBadge
+  channel_01
   character
   chars
+  checkOpNoThrow
   checkPermission
+  checkPermissionStatus
+  checkServiceStatus
   childrenAlpha
   chrono
   cid
@@ -1653,8 +1700,11 @@ Referenced Strings:
   colorBlue
   colorGreen
   colorRed
+  com.almoullim.Log.Tag
+  com.almoullim.background_location.Bac...
   com.android.internal.view.menu.MenuBu...
   com.android.vending
+  com.android.voicemail.permission.ADD_...
   com.google
   com.google.android.clockwork.home.UPD...
   com.google.android.gms
@@ -1671,6 +1721,8 @@ Referenced Strings:
   com.google.android.gms.location.inter...
   com.google.android.gms.location.inter...
   com.google.android.gms.location.inter...
+  com.google.android.gms.location.sampl...
+  com.google.android.gms.location.sampl...
   com.google.android.gms.signin
   com.google.android.gms.signin.interna...
   com.google.android.gms.signin.interna...
@@ -1837,6 +1889,7 @@ Referenced Strings:
   flutter
   flutter.baseflow.com/geolocator
   flutter.baseflow.com/geolocator_updates
+  flutter.baseflow.com/permissions/methods
   flutter/accessibility
   flutter/isolate
   flutter/keyevent
@@ -1983,6 +2036,7 @@ Referenced Strings:
   instant
   int1
   int2
+  intent
   intent_extra_data_key
   interpolator
   interval
@@ -2060,6 +2114,8 @@ Referenced Strings:
   location
   locationServices
   locationServicesDisabled
+  location_mode
+  location_providers_allowed
   longPress
   long_value
   longitude
@@ -2141,19 +2197,9 @@ Referenced Strings:
   off
   offset
   offsetId
-  onActivityResult
-  onBackPressed
-  onDestroy
-  onDestroyView
-  onLowMemory
   onMenuKeyEvent
-  onNewIntent
-  onRequestPermissionsResult
+  onRequestPermissionResult
   onResultSend
-  onSaveInstanceState
-  onStop
-  onTrimMemory
-  onUserLeaveHint
   on_delete
   on_update
   oneTimeCode
@@ -2197,6 +2243,7 @@ Referenced Strings:
   permissionDenied
   permissionRequestInProgress
   permissions
+  permissions_handler
   person
   personFamilyName
   personGivenName
@@ -2205,6 +2252,7 @@ Referenced Strings:
   personName
   personNamePrefix
   personNameSuffix
+  phone
   phoneCountryCode
   phoneNational
   phoneNumber
@@ -2268,7 +2316,9 @@ Referenced Strings:
   repeatMode
   repeatTime
   requestPermission
+  requestPermissions
   requestService
+  requesting_location_updates
   required_network_type
   requiresBatteryNotLow
   requiresCharging
@@ -2339,6 +2389,7 @@ Referenced Strings:
   seqno
   sequence
   serverAuthCode
+  service
   serviceEnabled
   service_esmobile
   service_googleme
@@ -2361,7 +2412,9 @@ Referenced Strings:
   setTransitionAlpha
   setValue
   setWindowLayoutType
+  set_notification_title
   shortcutId
+  shouldShowRequestPermissionRationale
   should_attach_engine_to_activity
   show
   showBadge
@@ -2383,6 +2436,7 @@ Referenced Strings:
   startOffset
   startX
   startY
+  start_location_service
   state
   state:
   status
@@ -2390,6 +2444,8 @@ Referenced Strings:
   statusBarIconBrightness
   statusCode
   status_bar_height
+  stop_location_service
+  stop_service
   streetAddress
   string
   strokeAlpha
@@ -2428,7 +2484,9 @@ Referenced Strings:
   tag
   tap
   target
+  task
   taskName
+  tel:123123
   telephoneNumber
   telephoneNumberCountryCode
   telephoneNumberDevice
@@ -2597,7 +2655,7 @@ Marking attr:passwordToggleDrawable:2130903367 used because its prefix matches s
 Marking attr:passwordToggleEnabled:2130903368 used because its prefix matches string pool constant password
 Marking attr:passwordToggleTint:2130903369 used because its prefix matches string pool constant password
 Marking attr:passwordToggleTintMode:2130903370 used because its prefix matches string pool constant password
-Marking string:password_toggle_content_description:2131558465 used because its prefix matches string pool constant password
+Marking string:password_toggle_content_description:2131558467 used because its prefix matches string pool constant password
 Marking attr:state_above_anchor:2130903416 used because its prefix matches string pool constant state
 Marking attr:state_collapsed:2130903417 used because its prefix matches string pool constant state
 Marking attr:state_collapsible:2130903418 used because its prefix matches string pool constant state
@@ -2607,10 +2665,10 @@ Marking styleable:Spinner:-1 used because its prefix matches string pool constan
 Marking id:time:2131230935 used because its prefix matches string pool constant time
 Marking id:light:2131230845 used because its prefix matches string pool constant light
 Marking id:group_divider:2131230831 used because its prefix matches string pool constant group
-Marking string:path_password_eye:2131558466 used because its prefix matches string pool constant path
-Marking string:path_password_eye_mask_strike_through:2131558467 used because its prefix matches string pool constant path
-Marking string:path_password_eye_mask_visible:2131558468 used because its prefix matches string pool constant path
-Marking string:path_password_strike_through:2131558469 used because its prefix matches string pool constant path
+Marking string:path_password_eye:2131558468 used because its prefix matches string pool constant path
+Marking string:path_password_eye_mask_strike_through:2131558469 used because its prefix matches string pool constant path
+Marking string:path_password_eye_mask_visible:2131558470 used because its prefix matches string pool constant path
+Marking string:path_password_strike_through:2131558471 used because its prefix matches string pool constant path
 Marking styleable:ButtonBarLayout:-1 used because its prefix matches string pool constant Button
 Marking id:transition_current_scene:2131230942 used because its prefix matches string pool constant transition
 Marking id:transition_layout_save:2131230943 used because its prefix matches string pool constant transition
@@ -2726,7 +2784,7 @@ Marking attr:statusBarBackground:2130903421 used because its prefix matches stri
 Marking attr:statusBarScrim:2130903422 used because its prefix matches string pool constant status
 Marking id:status_bar_latest_event_content:2131230913 used because its prefix matches string pool constant status
 Marking integer:status_bar_notification_info_maxnum:2131296271 used because its prefix matches string pool constant status
-Marking string:status_bar_notification_info_overflow:2131558471 used because its prefix matches string pool constant status
+Marking string:status_bar_notification_info_overflow:2131558478 used because its prefix matches string pool constant status
 Marking attr:menu:2130903351 used because its prefix matches string pool constant menu
 Marking attr:finderOffset:2130903252 used because its prefix matches string pool constant find
 Marking attr:background:2130903089 used because its prefix matches string pool constant background
@@ -3026,7 +3084,8 @@ Marking id:search_mag_icon:2131230891 used because its prefix matches string poo
 Marking id:search_plate:2131230892 used because its prefix matches string pool constant search
 Marking id:search_src_text:2131230893 used because its prefix matches string pool constant search
 Marking id:search_voice_btn:2131230894 used because its prefix matches string pool constant search
-Marking string:search_menu_title:2131558470 used because its prefix matches string pool constant search
+Marking string:search_menu_title:2131558476 used because its prefix matches string pool constant search
+Marking string:settings:2131558477 used because its prefix matches string pool constant set
 Marking styleable:CoordinatorLayout:-1 used because its prefix matches string pool constant CoordinatorLayout
 Marking styleable:CoordinatorLayout_Layout:-1 used because its prefix matches string pool constant CoordinatorLayout
 Marking id:chronometer:2131230796 used because its prefix matches string pool constant chrono
@@ -3141,6 +3200,7 @@ Marking attr:queryHint:2130903379 used because its prefix matches string pool co
 Marking styleable:View:-1 used because its prefix matches string pool constant View
 Marking styleable:ViewBackgroundHelper:-1 used because its prefix matches string pool constant View
 Marking styleable:ViewStubCompat:-1 used because its prefix matches string pool constant View
+Marking string:location_updates_label:2131558464 used because its prefix matches string pool constant location
 Marking id:none:2131230860 used because its prefix matches string pool constant none
 Marking id:dark:2131230806 used because its prefix matches string pool constant dark
 Marking attr:helperText:2130903271 used because its prefix matches string pool constant help
@@ -3252,8 +3312,8 @@ drawable:abc_spinner_textfield_background_material:2131165256 => [dimen:abc_cont
 drawable:abc_switch_thumb_material:2131165257 => [drawable:abc_btn_switch_to_on_mtrl_00012:2131165202, drawable:abc_btn_switch_to_on_mtrl_00001:2131165201]
 drawable:abc_tab_indicator_material:2131165259 => [drawable:abc_tab_indicator_mtrl_alpha:2131165260]
 drawable:abc_textfield_search_material:2131165272 => [drawable:abc_textfield_search_activated_mtrl_alpha:2131165270, drawable:abc_textfield_search_default_mtrl_alpha:2131165271]
-drawable:avd_hide_password:2131165274 => [drawable:avd_hide_password_1:-1, string:path_password_strike_through:2131558469, string:path_password_eye_mask_visible:2131558468, string:path_password_eye:2131558466, drawable:avd_hide_password_2:-1, integer:hide_password_duration:2131296265, string:path_password_eye_mask_strike_through:2131558467, drawable:avd_hide_password_3:-1]
-drawable:avd_show_password:2131165275 => [drawable:avd_show_password_1:-1, string:path_password_strike_through:2131558469, string:path_password_eye_mask_strike_through:2131558467, string:path_password_eye:2131558466, drawable:avd_show_password_2:-1, integer:show_password_duration:2131296270, string:path_password_eye_mask_visible:2131558468, drawable:avd_show_password_3:-1]
+drawable:avd_hide_password:2131165274 => [drawable:avd_hide_password_1:-1, string:path_password_strike_through:2131558471, string:path_password_eye_mask_visible:2131558470, string:path_password_eye:2131558468, drawable:avd_hide_password_2:-1, integer:hide_password_duration:2131296265, string:path_password_eye_mask_strike_through:2131558469, drawable:avd_hide_password_3:-1]
+drawable:avd_show_password:2131165275 => [drawable:avd_show_password_1:-1, string:path_password_strike_through:2131558471, string:path_password_eye_mask_strike_through:2131558469, string:path_password_eye:2131558468, drawable:avd_show_password_2:-1, integer:show_password_duration:2131296270, string:path_password_eye_mask_visible:2131558470, drawable:avd_show_password_3:-1]
 drawable:common_google_signin_btn_icon_dark:2131165277 => [drawable:common_google_signin_btn_icon_disabled:2131165281, drawable:common_google_signin_btn_icon_dark_focused:2131165278, drawable:common_google_signin_btn_icon_dark_normal:2131165279]
 drawable:common_google_signin_btn_icon_dark_focused:2131165278 => [drawable:common_google_signin_btn_icon_dark_normal:2131165279]
 drawable:common_google_signin_btn_icon_dark_normal:2131165279 => [drawable:common_google_signin_btn_icon_dark_normal_background:2131165280, drawable:googleg_standard_color_18:2131165302]
@@ -3269,7 +3329,7 @@ drawable:common_google_signin_btn_text_light:2131165291 => [drawable:common_goog
 drawable:common_google_signin_btn_text_light_focused:2131165292 => [drawable:common_google_signin_btn_text_light_normal:2131165293]
 drawable:common_google_signin_btn_text_light_normal:2131165293 => [drawable:common_google_signin_btn_text_light_normal_background:2131165294, drawable:googleg_standard_color_18:2131165302]
 drawable:design_bottom_navigation_item_background:2131165295 => [attr:colorPrimary:2130903184]
-drawable:design_ic_visibility:2131165297 => [string:path_password_eye:2131558466]
+drawable:design_ic_visibility:2131165297 => [string:path_password_eye:2131558468]
 drawable:design_password_eye:2131165299 => [drawable:design_ic_visibility:2131165297, drawable:design_ic_visibility_off:2131165298, drawable:avd_show_password:2131165275, id:masked:2131230850, id:visible:2131230952, drawable:avd_hide_password:2131165274]
 drawable:design_snackbar_background:2131165300 => [dimen:design_snackbar_background_corner_radius:2131099763, color:design_snackbar_background_color:2131034178]
 drawable:mtrl_snackbar_background:2131165307 => [dimen:mtrl_snackbar_background_corner_radius:2131099829, color:design_snackbar_background_color:2131034178]
@@ -3771,7 +3831,7 @@ style:Widget_Design_FloatingActionButton:2131624395 => [drawable:design_fab_back
 style:Widget_Design_NavigationView:2131624396 => [dimen:design_navigation_elevation:2131099754, dimen:design_navigation_item_icon_padding:2131099758, dimen:design_navigation_item_horizontal_padding:2131099757, dimen:design_navigation_max_width:2131099759]
 style:Widget_Design_Snackbar:2131624398 => [dimen:design_snackbar_min_width:2131099767, dimen:design_snackbar_max_width:2131099766, drawable:design_snackbar_background:2131165300, dimen:design_snackbar_padding_horizontal:2131099768, dimen:design_snackbar_elevation:2131099764, dimen:design_snackbar_action_inline_max_width:2131099762]
 style:Widget_Design_TabLayout:2131624399 => [style:Base_Widget_Design_TabLayout:2131624126]
-style:Widget_Design_TextInputLayout:2131624400 => [style:TextAppearance_Design_Hint:2131624229, style:TextAppearance_Design_HelperText:2131624228, style:TextAppearance_Design_Error:2131624227, style:TextAppearance_Design_Counter:2131624225, style:TextAppearance_Design_Counter_Overflow:2131624226, drawable:design_password_eye:2131165299, color:design_tint_password_toggle:2131034179, string:password_toggle_content_description:2131558465]
+style:Widget_Design_TextInputLayout:2131624400 => [style:TextAppearance_Design_Hint:2131624229, style:TextAppearance_Design_HelperText:2131624228, style:TextAppearance_Design_Error:2131624227, style:TextAppearance_Design_Counter:2131624225, style:TextAppearance_Design_Counter_Overflow:2131624226, drawable:design_password_eye:2131165299, color:design_tint_password_toggle:2131034179, string:password_toggle_content_description:2131558467]
 style:Widget_MaterialComponents_BottomAppBar:2131624401 => [style:Widget_AppCompat_Toolbar:2131624387, dimen:mtrl_bottomappbar_fab_cradle_margin:2131099793, dimen:mtrl_bottomappbar_fab_cradle_rounded_corner_radius:2131099794, dimen:mtrl_bottomappbar_fab_cradle_vertical_offset:2131099795]
 style:Widget_MaterialComponents_BottomAppBar_Colored:2131624402 => [style:Widget_MaterialComponents_BottomAppBar:2131624401, attr:colorPrimary:2130903184]
 style:Widget_MaterialComponents_BottomNavigationView:2131624403 => [style:Widget_Design_BottomNavigationView:2131624392, color:mtrl_bottom_nav_item_tint:2131034203, attr:textAppearanceCaption:2130903466]
@@ -4397,13 +4457,17 @@ animator:design_fab_hide_motion_spec:2130837505,
    string:common_google_play_services_updating_text:2131558456,
    string:common_google_play_services_wear_update_text:2131558457,
    string:common_open_on_phone:2131558458,
-   string:password_toggle_content_description:2131558465,
-   string:path_password_eye:2131558466,
-   string:path_password_eye_mask_strike_through:2131558467,
-   string:path_password_eye_mask_visible:2131558468,
-   string:path_password_strike_through:2131558469,
-   string:search_menu_title:2131558470,
-   string:status_bar_notification_info_overflow:2131558471,
+   string:location_updates_label:2131558464,
+   string:password_toggle_content_description:2131558467,
+   string:path_password_eye:2131558468,
+   string:path_password_eye_mask_strike_through:2131558469,
+   string:path_password_eye_mask_visible:2131558470,
+   string:path_password_strike_through:2131558471,
+   string:permission_denied_explanation:2131558472,
+   string:permission_rationale:2131558473,
+   string:search_menu_title:2131558476,
+   string:settings:2131558477,
+   string:status_bar_notification_info_overflow:2131558478,
    style:Animation_AppCompat_Tooltip:2131623940,
    style:LaunchTheme:2131624133,
    style:NormalTheme:2131624134,
@@ -4573,78 +4637,78 @@ animator:design_fab_hide_motion_spec:2130837505,
    attr:android_theme:-1,
    attr:android_inflatedId:-1,
    attr:android_borderlessButtonStyle:-1
-Skipped unused resource res/anim/abc_fade_in.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/abc_fade_out.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/abc_slide_in_bottom.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/abc_slide_in_top.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/abc_slide_out_bottom.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/abc_slide_out_top.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/design_bottom_sheet_slide_in.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/design_bottom_sheet_slide_out.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/design_snackbar_in.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim/design_snackbar_out.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim-v21/design_bottom_sheet_slide_in.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/anim-v21/design_bottom_sheet_slide_out.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/animator/mtrl_btn_unelevated_state_list_anim.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/animator/mtrl_chip_state_list_anim.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/animator/mtrl_fab_hide_motion_spec.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/animator/mtrl_fab_show_motion_spec.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/animator-v21/design_appbar_state_list_animator.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/abc_background_cache_hint_selector_material_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/common_google_signin_btn_text_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/common_google_signin_btn_text_light.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/common_google_signin_btn_tint.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/design_error.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/design_tint_password_toggle.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_colored_item_tint.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_bottom_nav_item_tint.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_btn_stroke_color_selector.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_btn_text_btn_ripple_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_chip_background_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_chip_close_icon_tint.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_chip_ripple_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_chip_text_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_fab_ripple_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_tabs_colored_ripple_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_tabs_icon_color_selector.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_tabs_icon_color_selector_colored.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_tabs_legacy_text_color_selector.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_tabs_ripple_color.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/mtrl_text_btn_text_color_selector.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color/switch_thumb_material_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color-v23/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/color-v23/design_tint_password_toggle.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/abc_item_background_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/abc_list_selector_background_transition_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/abc_list_selector_holo_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_focused.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_normal.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_disabled.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light_focused.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_icon_light_normal.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark_focused.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_dark_normal.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/design_bottom_navigation_item_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/design_fab_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/design_password_eye.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/design_snackbar_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/ic_mtrl_chip_checked_black.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/ic_mtrl_chip_checked_circle.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/ic_mtrl_chip_close_circle.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_snackbar_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/avd_hide_password.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/avd_show_password.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/design_bottom_navigation_item_background.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-v21/design_password_eye.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/anim/abc_fade_in.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_fade_out.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_slide_in_bottom.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_slide_in_top.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_slide_out_bottom.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/abc_slide_out_top.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/design_bottom_sheet_slide_in.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/design_bottom_sheet_slide_out.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/design_snackbar_in.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim/design_snackbar_out.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim-v21/design_bottom_sheet_slide_in.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/anim-v21/design_bottom_sheet_slide_out.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/animator/mtrl_btn_unelevated_state_list_anim.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/animator/mtrl_chip_state_list_anim.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/animator/mtrl_fab_hide_motion_spec.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/animator/mtrl_fab_show_motion_spec.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/animator-v21/design_appbar_state_list_animator.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/abc_background_cache_hint_selector_material_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/common_google_signin_btn_text_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/common_google_signin_btn_text_light.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/common_google_signin_btn_tint.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/design_error.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/design_tint_password_toggle.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_colored_item_tint.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_bottom_nav_item_tint.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_btn_stroke_color_selector.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_btn_text_btn_ripple_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_chip_background_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_chip_close_icon_tint.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_chip_ripple_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_chip_text_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_fab_ripple_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_tabs_colored_ripple_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_tabs_icon_color_selector.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_tabs_icon_color_selector_colored.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_tabs_legacy_text_color_selector.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_tabs_ripple_color.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/mtrl_text_btn_text_color_selector.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color/switch_thumb_material_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color-v23/abc_btn_colored_text_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/color-v23/design_tint_password_toggle.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/abc_item_background_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/abc_list_selector_background_transition_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/abc_list_selector_holo_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_focused.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_dark_normal.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_disabled.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light_focused.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_icon_light_normal.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark_focused.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_dark_normal.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/design_bottom_navigation_item_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/design_fab_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/design_password_eye.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/design_snackbar_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/ic_mtrl_chip_checked_black.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/ic_mtrl_chip_checked_circle.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/ic_mtrl_chip_close_circle.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/mtrl_snackbar_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable/mtrl_tabs_default_indicator.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-v21/avd_hide_password.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-v21/avd_show_password.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-v21/design_bottom_navigation_item_background.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-v21/design_password_eye.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png: 207 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 217 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 610 bytes (replaced with small dummy file of size 77 bytes)
@@ -4687,39 +4751,39 @@ Skipped unused resource res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 72
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1615 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/design_ic_visibility.png: 1155 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/design_ic_visibility_off.png: 1201 bytes (replaced with small dummy file of size 67 bytes)
-Skipped unused resource res/drawable-anydpi-v21/design_ic_visibility.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/drawable-anydpi-v21/design_ic_visibility_off.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/interpolator/mtrl_linear.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_action_bar_up_container.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_action_mode_bar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_dialog_title_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v17/abc_dialog_title_material.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_expanded_menu_layout.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_list_menu_item_layout.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_screen_content_include.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_screen_simple.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_screen_simple_overlay_action_mode.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v21/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_bottom_navigation_item.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_bottom_sheet_dialog.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v17/design_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_layout_tab_icon.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_layout_tab_text.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_navigation_item.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_navigation_item_header.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_navigation_item_separator.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_navigation_item_subheader.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_navigation_menu.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/design_text_input_password_icon.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/mtrl_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout/mtrl_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v17/mtrl_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-sw600dp-v13/design_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-sw600dp-v13/mtrl_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
-Skipped unused resource res/layout-v26/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v21/design_ic_visibility.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/drawable-anydpi-v21/design_ic_visibility_off.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/interpolator/mtrl_linear.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_action_bar_up_container.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_action_mode_bar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_dialog_title_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-v17/abc_dialog_title_material.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_expanded_menu_layout.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_list_menu_item_layout.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_screen_content_include.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_screen_simple.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_screen_simple_overlay_action_mode.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-v21/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_bottom_navigation_item.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_bottom_sheet_dialog.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-v17/design_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_layout_tab_icon.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_layout_tab_text.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_navigation_item.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_navigation_item_header.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_navigation_item_separator.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_navigation_item_subheader.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_navigation_menu.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/design_text_input_password_icon.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/mtrl_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout/mtrl_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-v17/mtrl_layout_snackbar_include.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-sw600dp-v13/design_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-sw600dp-v13/mtrl_layout_snackbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/layout-v26/abc_screen_toolbar.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
