@@ -24,8 +24,15 @@ final headingStyle = TextStyle(
 
 var userDB;
 var GPSDB;
+var keyDB;
+
 const defaultDuration = Duration(milliseconds: 250);
 
+const String keyInfo = "key";
+const String userKey = "usk";
+const String groupKey = "gpk";
+const String storeUsk = "store_usk";
+const String storeGpk = "store_gpk";
 const String userInfo = "userDB";
 const String userID = "ID";
 const String userName = "name";

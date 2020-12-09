@@ -11,6 +11,7 @@ void main() async {
   await Hive.initFlutter();
   userDB = await Hive.openBox(userInfo);
   GPSDB = await Hive.openBox(GPSInfo);
+  keyDB = await Hive.openBox(keyInfo);
   runApp(MyApp());
 }
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     bool isAutoLogin = userDB.get(userAccessToken) == null ? false : true;
-    print(isAutoLogin);
+    //print(isAutoLogin);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BoB virus tracker',

@@ -9,7 +9,8 @@ import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
 
 class GridDashboard extends StatefulWidget {
   String type;
-  GridDashboard(this.type);
+  String ID;
+  GridDashboard(this.ID, this.type);
   @override
   _GridDashboardState createState() => _GridDashboardState();
 }
@@ -47,7 +48,7 @@ class _GridDashboardState extends State<GridDashboard> {
 
   Items item6 = new Items(
     title: "설정",
-    subtitle: "",
+    subtitle: "GPS, 기타 정보등을 설정합니다.",
     img: "assets/images/setting.png",
   );
 
@@ -86,6 +87,7 @@ class _GridDashboardState extends State<GridDashboard> {
               child: InkWell(
                 onTap: () async {
                   if (data.title == "QR Scan") {
+                    await getUserKey(widget.ID, widget.type);
                     changePageRoute(ScanPage.routeName);
                   } else if (data.title == "QR Roadmap") {
                     changePageRoute(GeneratePage.routeName);
@@ -144,7 +146,7 @@ class _GridDashboardState extends State<GridDashboard> {
     timeHandler.pause();
     if(timeHandler.isPaused) {
       leftSecond = 15;
-      qrText = createJWTToken();
+      qrText = await createSign();
     }
     final variable = await Navigator.pushNamed(context, routeName);
     timeHandler.resume();

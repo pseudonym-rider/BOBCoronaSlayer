@@ -5,9 +5,9 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
+8        android:minSdkVersion="18"
 8-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="28" />
+9        android:targetSdkVersion="29" />
 9-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml
 10    <!--
 11         io.flutter.app.FlutterApplication is an android.app.Application that
@@ -16,24 +16,24 @@
 14         additional functionality it is fine to subclass or reimplement
 15         FlutterApplication and put your custom class here.
 16    -->
-17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-81
-17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-78
-18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-79
-18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
-19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-19-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-77
-19-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-74
-20    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-20-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-84
-20-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-82
-21    <uses-permission android:name="android.permission.INTERNET" />
-21-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-66
-21-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-64
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
+17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-64
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-81
+18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-79
+19-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-76
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+20-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-77
+20-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-74
+21    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+21-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-84
+21-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-82
 22    <uses-permission android:name="android.permission.CAMERA" />
-22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:11:5-65
-22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:11:22-62
+22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:5-65
+22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:22-62
 23    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 23-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
 23-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
@@ -124,8 +124,8 @@
 74-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:50:13-30
 75
 76        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
-76-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:14:9-84
-76-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:14:19-81
+76-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:9-84
+76-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:19-81
 77
 78        <service
 78-->[:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\release\AndroidManifest.xml:13:9-17:37

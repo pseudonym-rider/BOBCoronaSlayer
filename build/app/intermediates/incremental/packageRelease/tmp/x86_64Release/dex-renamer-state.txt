@@ -1,4 +1,4 @@
-#Sat Dec 05 14:46:14 KST 2020
+#Thu Dec 10 00:11:44 KST 2020
 base.0=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

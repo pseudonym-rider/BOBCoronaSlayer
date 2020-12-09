@@ -45,9 +45,9 @@
     },
     {
       "name": "barcode_scan",
-      "rootUri": "file:///C:/app/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-2.0.1",
+      "rootUri": "file:///C:/app/flutter/.pub-cache/hosted/pub.dartlang.org/barcode_scan-3.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.1"
     },
     {
       "name": "boolean_selector",
@@ -506,6 +506,12 @@
       "languageVersion": "2.7"
     },
     {
+      "name": "protobuf",
+      "rootUri": "file:///C:/app/flutter/.pub-cache/hosted/pub.dartlang.org/protobuf-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///C:/app/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.2+2",
       "packageUri": "lib/",
@@ -686,7 +692,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-12-05T05:02:19.859816Z",
+  "generated": "2020-12-08T16:32:30.175783Z",
   "generator": "pub",
   "generatorVersion": "2.10.4"
 }

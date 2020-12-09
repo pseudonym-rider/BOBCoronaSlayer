@@ -6,7 +6,7 @@ INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\s
 INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:1:1-52:12
 MERGED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:1:1-52:12
 MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
 MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-20:12
 MERGED from [:permission_handler] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
@@ -14,8 +14,9 @@ MERGED from [:geolocator] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\b
 MERGED from [:path_provider] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:workmanager] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\workmanager\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ddc12348c7538354a46c528303ed5c98\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\df3d45654315cc7c4e9333a3fb7b0815\play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f1aaa6d621f3c652ee6fe5723a143b22\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
@@ -27,17 +28,18 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\dldms\.gradle\cac
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\333a1c851fce95274a1c02b6cf2bfc8f\media-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:17:1-132:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f64fa5f7ac9fa4f53ef92dad5dfe2353\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\0f0610cdcf96e6cfa9529b6a3246e3f6\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fea2864cd1008a941e85798b978e31bd\transition-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\525edb0d8db5484610c43f31557a8e19\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3e2a0fa703037e54c41ba60708c4c8b1\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\68952fc751baec5d29bcfe7458fdfebc\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -78,52 +80,52 @@ INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\s
 		INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:1:11-69
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-81
-MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-	android:name
-		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-78
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-79
-MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
-MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
-	android:name
-		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
-uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-77
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-77
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-77
-MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
-MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
-	android:name
-		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-74
-uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-84
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-85
-MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-85
-	android:name
-		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-82
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-66
-MERGED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-66
-MERGED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-66
+ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
+MERGED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
+MERGED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-64
+		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-81
+MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-77
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-77
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-77
+MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
+MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-74
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-84
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-85
+MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-85
+	android:name
+		ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-82
 application
 ADDED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:13:5-51:19
-MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:19
-MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:19
+MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-11:19
+MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-11:19
 MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-18:19
 MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-18:19
 MERGED from [:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\df3d45654315cc7c4e9333a3fb7b0815\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\df3d45654315cc7c4e9333a3fb7b0815\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
@@ -204,8 +206,8 @@ INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\s
 INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml
 MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:permission_handler] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\permission_handler\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -220,10 +222,12 @@ MERGED from [:workmanager] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\
 MERGED from [:workmanager] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\workmanager\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2b16ac6c4193835014f293427ee35afa\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ddc12348c7538354a46c528303ed5c98\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ddc12348c7538354a46c528303ed5c98\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\df3d45654315cc7c4e9333a3fb7b0815\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\df3d45654315cc7c4e9333a3fb7b0815\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
@@ -246,10 +250,6 @@ MERGED from [androidx.media:media:1.1.0] C:\Users\dldms\.gradle\caches\transform
 MERGED from [androidx.media:media:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\333a1c851fce95274a1c02b6cf2bfc8f\media-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.work:work-runtime:2.3.4] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\8cf2e17496b6b7aff873d14bd2eb6720\work-runtime-2.3.4\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\1681add2c5f7781230c3b0d90cc57ad9\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f64fa5f7ac9fa4f53ef92dad5dfe2353\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f64fa5f7ac9fa4f53ef92dad5dfe2353\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\28d99d5113324aa067757f8ca41a426f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
@@ -260,14 +260,20 @@ MERGED from [androidx.loader:loader:1.0.0] C:\Users\dldms\.gradle\caches\transfo
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\e1bbce6b0d79e8479b70e7bd729bb743\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fea2864cd1008a941e85798b978e31bd\transition-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\fea2864cd1008a941e85798b978e31bd\transition-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\525edb0d8db5484610c43f31557a8e19\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\525edb0d8db5484610c43f31557a8e19\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3e2a0fa703037e54c41ba60708c4c8b1\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3e2a0fa703037e54c41ba60708c4c8b1\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\60c890b7febb99854cab301d6a2a855b\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\2410fdb7000841f3d1c8c67029d91e2f\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b1c3739a180dfdcda5d6182680201b94\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\68952fc751baec5d29bcfe7458fdfebc\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\68952fc751baec5d29bcfe7458fdfebc\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
@@ -323,13 +329,13 @@ INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\s
 		INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
+ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
+		ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-62
 activity#de.mintware.barcode_scan.BarcodeScannerActivity
-ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
+ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-84
 	android:name
-		ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
+		ADDED from [:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:19-81
 service#com.almoullim.background_location.LocationUpdatesService
 ADDED from [:background_location] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\background_location\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:37
 	android:enabled

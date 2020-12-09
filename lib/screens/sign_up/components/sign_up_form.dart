@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:BOB_corona_slayer/components/custom_surfix_icon.dart';
 import 'package:BOB_corona_slayer/components/default_button.dart';
 import 'package:BOB_corona_slayer/components/form_error.dart';
-import 'package:BOB_corona_slayer/screens/complete_profile/complete_profile_screen.dart';
+import 'package:BOB_corona_slayer/screens/signup_for_store/signup_for_store.dart';
 import 'package:BOB_corona_slayer/screens/login_success/login_success_screen.dart';
 import 'package:BOB_corona_slayer/services/commuication.dart';
 
@@ -27,8 +27,7 @@ class _SignUpFormState extends State<SignUpForm> {
   String conform_password;
   bool GPSChecker = false;
   bool personalChecker = false;
-  String type = null;
-  String license = null;
+  String type = "";
   bool typePersonChecker = false;
   //bool typeStaffChecker = false;
   bool typeManagerChecker = false;
@@ -60,7 +59,6 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: getProportionateScreenHeight(30)),
           buildBirthFormField(),
           SizedBox(height: getProportionateScreenHeight(10)),
-
           SizedBox(height: getProportionateScreenHeight(10)),
           buildIDFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
@@ -80,8 +78,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     typePersonChecker = value;
                     //typeStaffChecker = false;
                     typeManagerChecker = false;
-                    if (typePersonChecker) type = "1";
-                    else type = null;
+                    if (typePersonChecker)
+                      type = "1";
+                    else
+                      type = null;
                     if (value) {
                       removeError(error: kTypeCheckNullError);
                     } else {
@@ -91,29 +91,6 @@ class _SignUpFormState extends State<SignUpForm> {
                 },
               ),
               Text('개인'),
-              /*
-                Checkbox(
-                  value: typeStaffChecker,
-                  activeColor: kPrimaryColor,
-                  onChanged: (value) {
-                    setState(() {
-                      typePersonChecker = false;
-                      typeStaffChecker = value;
-                      typeManagerChecker = false;
-                      if (typeStaffChecker)
-                        type = "2";
-                      else
-                        type = null;
-                      if (value) {
-                        removeError(error: kTypeCheckNullError);
-                      } else {
-                        addError(error: kTypeCheckNullError);
-                      }
-                    });
-                  },
-                ),
-                Text('직원'),
-                 */
               Checkbox(
                 value: typeManagerChecker,
                 activeColor: kPrimaryColor,
@@ -122,8 +99,10 @@ class _SignUpFormState extends State<SignUpForm> {
                     typePersonChecker = false;
                     //typeStaffChecker = false;
                     typeManagerChecker = value;
-                    if (typeManagerChecker) /*type = "3";*/ type = "2";
-                    else type = null;
+                    if (typeManagerChecker)
+                      type = "2";
+                    else
+                      type = null;
                     if (value) {
                       removeError(error: kTypeCheckNullError);
                     } else {
@@ -135,7 +114,7 @@ class _SignUpFormState extends State<SignUpForm> {
               Text('점주'),
             ],
           ),
-          typeManagerChecker ? buildLicenseFormField() : Container(),
+          //typeManagerChecker ? buildLicenseFormField() : Container(),
           Row(
             children: [
               Checkbox(
@@ -182,17 +161,31 @@ class _SignUpFormState extends State<SignUpForm> {
             text: "가입하기",
             press: () async {
               if (_formKey.currentState.validate()) {
-                if (!GPSChecker)      {addError(error: kGPSCheckNullError); return;}
-                if (!personalChecker) {addError(error: kPersonalCheckNullError); return;}
-                if (type == null)     {addError(error: kTypeCheckNullError); return;}
+                if (!GPSChecker) {
+                  addError(error: kGPSCheckNullError);
+                  return;
+                }
+                if (!personalChecker) {
+                  addError(error: kPersonalCheckNullError);
+                  return;
+                }
+                if (type == null) {
+                  addError(error: kTypeCheckNullError);
+                  return;
+                }
                 _formKey.currentState.save();
                 //if (!genderChecker)   {addError(error: kGenderCheckNullError); return;}
                 // if all are valid then go to success screen
-                bool isJoin = await Join(ID, password, name, phoneNumber, birth, gender, type, license);
-                if (!isJoin) {addError(error: kSignUpFailError); return;}
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                bool isJoin = await Join(ID, password, name, phoneNumber, birth,
+                    gender, type);
+                if (!isJoin) {
+                  addError(error: kSignUpFailError);
+                  return;
+                }
+                type == "1"
+                    ? Navigator.pushNamed(context, LoginSuccessScreen.routeName)
+                    : Navigator.pushNamed(context, SignupForStoreScreen.routeName);
               }
-
             },
           ),
         ],
@@ -208,11 +201,6 @@ class _SignUpFormState extends State<SignUpForm> {
         if (value.isNotEmpty) {
           removeError(error: kNameNullError);
         }
-        /*
-        else if (emailValidatorRegExp.hasMatch(value)) {
-          removeError(error: kInvalidEmailError);
-        }
-        */
         return null;
       },
       validator: (value) {
@@ -220,12 +208,6 @@ class _SignUpFormState extends State<SignUpForm> {
           addError(error: kNameNullError);
           return "";
         }
-        /*
-        else if (!emailValidatorRegExp.hasMatch(value)) {
-          addError(error: kInvalidEmailError);
-          return "";
-        }
-        */
         return null;
       },
       decoration: InputDecoration(
@@ -416,33 +398,6 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
-  TextFormField buildLicenseFormField() {
-    return TextFormField(
-      keyboardType: TextInputType.text,
-      onSaved: (newValue) => license = newValue,
-      onChanged: (value) {
-        if (value.isNotEmpty) {
-          removeError(error: kLicenseNullError);
-        }
-        return null;
-      },
-      validator: (value) {
-        if (value.isEmpty) {
-          addError(error: kLicenseNullError);
-          return "";
-        }
-        return null;
-      },
-      decoration: InputDecoration(
-        labelText: "사업자 등록번호",
-        hintText: "사업자 등록번호를 입력하세요",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
-        floatingLabelBehavior: FloatingLabelBehavior.always,
-        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
-      ),
-    );
-  }
 
   bool isPasswordCompliant(String password) {
     if (password == null || password.isEmpty) {
@@ -451,7 +406,8 @@ class _SignUpFormState extends State<SignUpForm> {
 
     bool hasDigits = password.contains(new RegExp(r'[0-9]'));
     bool hasLowercase = password.contains(new RegExp(r'[a-z]'));
-    bool hasSpecialCharacters = password.contains(new RegExp(r'[!@#$%^&*(),.?":{}|<>]'));
+    bool hasSpecialCharacters =
+        password.contains(new RegExp(r'[!@#$%^&*(),.?":{}|<>]'));
 
     return hasDigits & hasLowercase & hasSpecialCharacters;
   }

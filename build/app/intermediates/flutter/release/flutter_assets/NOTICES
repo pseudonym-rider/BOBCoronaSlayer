@@ -112,6 +112,7 @@ analyzer
 args
 intl
 logging
+protobuf
 
 Copyright 2013, the Dart project authors. All rights reserved.
 Redistribution and use in source and binary forms, with or without

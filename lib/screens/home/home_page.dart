@@ -48,13 +48,15 @@ class HomeState extends State<Home> {
         ) ??
         false;
   }
-
   @override
   void initState() {
-    // TODO: implement initState
-    super.initState();
+
+    WidgetsBinding.instance.addPostFrameCallback((_){
+      getUserKey(widget.ID, widget.type);
+    });
     makeQRCode();
-    collectGPS();
+    //collectGPS();
+    super.initState();
     Workmanager.initialize(
       callbackDispatcher,
       isInDebugMode: false,
@@ -64,6 +66,7 @@ class HomeState extends State<Home> {
       "1",
       "BOB corona slayer가 실행중입니다.",
       frequency: Duration(minutes: 1),
+      tag: "collectGPS",
     );
   }
 
@@ -121,14 +124,14 @@ class HomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              QrImage(
+              qrText.split('-')[0] == "null" ? CircularProgressIndicator() : QrImage(
                 data: qrText,
                 size: 200.0,
               ),
               SizedBox(
                 height: 10,
               ),
-              Text('${leftSecond}초 남았습니다.',
+              leftSecond == null? Container() : Text('${leftSecond}초 남았습니다.',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -136,37 +139,38 @@ class HomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              GridDashboard(widget.type)
+              GridDashboard(widget.ID, widget.type),
             ],
           ),
         ));
   }
 
   makeQRCode() {
-    String token = createJWTToken();
+    String token = createSign();
     leftSecond = 15;
-    //print("15초 시작");
+    print("15초 시작");
     setState(() {
       qrText = token;
       timeHandler = Stream.periodic(Duration(seconds: 1), (_) => _)
           .take(1500)
-          .listen((_) {
+          .listen((_) async {
         leftSecond -= 1;
         if (leftSecond == 0) {
           leftSecond = 15;
-          //print("15초 만료 재발급");
-          qrText = createJWTToken();
+          print("15초 만료 재발급");
+          qrText = createSign();
         }
         setState(() {});
       });
     });
   }
 
+  /*
   collectGPS() {
     BackgroundLocation.getPermissions(
       onGranted: () async {
-        await BackgroundLocation.setNotificationTitle(
-            "BOB corona slayer가 동선정보를 수집중입니다.");
+        /*await BackgroundLocation.setNotificationTitle(
+            "BOB corona slayer가 동선정보를 수집중입니다.");*/
         await BackgroundLocation.startLocationService();
         BackgroundLocation.getLocationUpdates((location) {
           setState(() {
@@ -185,31 +189,20 @@ class HomeState extends State<Home> {
       },
     );
   }
+   */
 }
 
 void callbackDispatcher() {
   Workmanager.executeTask((task, inputData) async {
-    /*
-    await BackgroundLocation.startLocationService();
-    BackgroundLocation.getLocationUpdates((location) {
-      String userLocation =
-          'Latitude: ${location.latitude}, Longitude: ${location.longitude}';
-      notif.Notification notification = new notif.Notification();
-      notification.showNotificationWithoutSound(userLocation);
-      //print(userLocation);
-      String date = DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
-      GPSDB.put(date, userLocation.toString());
-      fetchGPS(date, userLocation.toString());
-    });
-     */
     Position userLocation = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
     String date = DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
-    GPSDB.put(date, userLocation.toString());
-    fetchGPS(date, userLocation.toString());
+    print(userLocation.toString());
 
     notif.Notification notification = new notif.Notification();
-    notification.showNotificationWithoutSound(userLocation.toString());
+    notification.showNotificationWithoutSound(userLocation);
 
+    GPSDB.put(date, userLocation.toString());
+    //fetchGPS(date, userLocation.toString());
     return Future.value(true);
   });
 }

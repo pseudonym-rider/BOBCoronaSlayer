@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\barcode_scan\\intermediates\\res\\merged\\release\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\dd2ecfcfb369a2f0046b9c1c6d80939e\\appcompat-1.0.2\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\7def8d6c3751559765cf68c2d5a2dddd\\appcompat-1.1.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -19,7 +19,7 @@
             "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\barcode_scan\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\dd2ecfcfb369a2f0046b9c1c6d80939e\\appcompat-1.0.2\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\7def8d6c3751559765cf68c2d5a2dddd\\appcompat-1.1.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
