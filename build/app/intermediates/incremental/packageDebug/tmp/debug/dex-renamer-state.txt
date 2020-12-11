@@ -1,10 +1,7 @@
-#Wed Dec 09 22:20:59 KST 2020
-path.2=classes3.dex
-path.1=classes2.dex
-path.0=classes.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
-renamed.0=classes.dex
-base.2=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
-base.1=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+#Fri Dec 11 09:59:07 KST 2020
 base.0=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex

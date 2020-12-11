@@ -1,17 +1,20 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:isolate';
+import 'dart:ui';
 import 'package:BOB_corona_slayer/constants.dart';
 import 'package:BOB_corona_slayer/services/commuication.dart';
+import 'package:background_locator/background_locator.dart';
+import 'package:background_locator/location_dto.dart';
+import 'package:background_locator/settings/android_settings.dart';
+import 'package:background_locator/settings/ios_settings.dart';
+import 'package:background_locator/settings/locator_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'griddashboard.dart';
-import 'package:workmanager/workmanager.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:background_location/background_location.dart';
 import 'package:flutter/services.dart';
-import 'components/notification.dart' as notif;
 
 class Home extends StatefulWidget {
   static String routeName = "/home";
@@ -26,48 +29,60 @@ class Home extends StatefulWidget {
 }
 
 class HomeState extends State<Home> {
-  Future<bool> _onBackPressed() {
-    return showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            title: Text("정말 종료하시겠습니까?"),
-            actions: <Widget>[
-              FlatButton(
-                child: Text("네"),
-                onPressed: () async {
-                  await BackgroundLocation.stopLocationService();
-                  SystemNavigator.pop();
-                  },
-              ),
-              FlatButton(
-                child: Text("아니오"),
-                onPressed: () => Navigator.pop(context, false),
-              ),
-            ],
-          ),
-        ) ??
-        false;
-  }
+  static const String _isolateName = "LocatorIsolate";
+  ReceivePort port = ReceivePort();
   @override
   void initState() {
-
-    WidgetsBinding.instance.addPostFrameCallback((_){
+    IsolateNameServer.registerPortWithName(port.sendPort, _isolateName);
+    port.listen((dynamic location) {
+      String userLocation =
+          "Latitude: ${location.latitude}, Longitude: ${location.longitude}";
+      String date = DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
+      print("userLocation: $userLocation");
+      GPSDB.put(date, userLocation);
+    });
+    initPlatformState();
+    startCollectGPS();
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       getUserKey(widget.ID, widget.type);
     });
     makeQRCode();
-    //collectGPS();
-    super.initState();
-    Workmanager.initialize(
-      callbackDispatcher,
-      isInDebugMode: false,
-    );
 
-    Workmanager.registerPeriodicTask(
-      "1",
-      "BOB corona slayer가 실행중입니다.",
-      frequency: Duration(minutes: 1),
-      tag: "collectGPS",
-    );
+  }
+
+  Future<void> initPlatformState() async {
+    await BackgroundLocator.initialize();
+  }
+
+  static void callback(LocationDto locationDto) async {
+    final SendPort send = IsolateNameServer.lookupPortByName(_isolateName);
+    send?.send(locationDto);
+  }
+
+  static void notificationCallback() {
+    print('User clicked on the notification');
+  }
+
+  void startCollectGPS() {
+    BackgroundLocator.registerLocationUpdate(callback,
+        autoStop: false,
+        iosSettings: IOSSettings(
+            accuracy: LocationAccuracy.NAVIGATION, distanceFilter: 0),
+        androidSettings: AndroidSettings(
+            accuracy: LocationAccuracy.NAVIGATION,
+            interval: 60,
+            distanceFilter: 0,
+            androidNotificationSettings: AndroidNotificationSettings(
+              notificationChannelName: 'Location tracking',
+              notificationTitle: 'BOB corona slayer',
+              notificationMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
+              notificationBigMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
+              notificationIcon: '',//'mipmap/teamLogo.PNG',
+              notificationIconColor: Colors.grey,
+                notificationTapCallback:
+                notificationCallback
+            )));
   }
 
   @override
@@ -124,18 +139,22 @@ class HomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              qrText.split('-')[0] == "null" ? CircularProgressIndicator() : QrImage(
-                data: qrText,
-                size: 200.0,
-              ),
+              qrText.split('-')[0] == "null"
+                  ? CircularProgressIndicator()
+                  : QrImage(
+                      data: qrText,
+                      size: 200.0,
+                    ),
               SizedBox(
                 height: 10,
               ),
-              leftSecond == null? Container() : Text('${leftSecond}초 남았습니다.',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600)),
+              leftSecond == null
+                  ? Container()
+                  : Text('${leftSecond}초 남았습니다.',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600)),
               SizedBox(
                 height: 20,
               ),
@@ -165,44 +184,25 @@ class HomeState extends State<Home> {
     });
   }
 
-  /*
-  collectGPS() {
-    BackgroundLocation.getPermissions(
-      onGranted: () async {
-        /*await BackgroundLocation.setNotificationTitle(
-            "BOB corona slayer가 동선정보를 수집중입니다.");*/
-        await BackgroundLocation.startLocationService();
-        BackgroundLocation.getLocationUpdates((location) {
-          setState(() {
-            String userLocation =
-                'Latitude: ${location.latitude}, Longitude: ${location.longitude}';
-            //print(userLocation);
-            String date =
-                DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
-            GPSDB.put(date, userLocation.toString());
-            fetchGPS(date, userLocation.toString());
-          });
-        });
-      },
-      onDenied: () {
-        exit(0);
-      },
-    );
+  Future<bool> _onBackPressed() {
+    return showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text("정말 종료하시겠습니까?"),
+            actions: <Widget>[
+              FlatButton(
+                child: Text("네"),
+                onPressed: () async {
+                  SystemNavigator.pop();
+                },
+              ),
+              FlatButton(
+                child: Text("아니오"),
+                onPressed: () => Navigator.pop(context, false),
+              ),
+            ],
+          ),
+        ) ??
+        false;
   }
-   */
-}
-
-void callbackDispatcher() {
-  Workmanager.executeTask((task, inputData) async {
-    Position userLocation = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best);
-    String date = DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
-    print(userLocation.toString());
-
-    notif.Notification notification = new notif.Notification();
-    notification.showNotificationWithoutSound(userLocation);
-
-    GPSDB.put(date, userLocation.toString());
-    //fetchGPS(date, userLocation.toString());
-    return Future.value(true);
-  });
 }

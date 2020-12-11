@@ -1,9 +1,7 @@
 import 'package:BOB_corona_slayer/constants.dart';
 import 'package:BOB_corona_slayer/services/commuication.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:BOB_corona_slayer/screens/gps/GPSSaveAndBackground.dart';
 import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
 import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
 
@@ -16,7 +14,6 @@ class GridDashboard extends StatefulWidget {
 }
 
 class _GridDashboardState extends State<GridDashboard> {
-  Position position;
   Items item1 = new Items(
       title: "QR Scan",
       subtitle: "방문자들의 QR코드를 읽습니다.",
@@ -52,18 +49,10 @@ class _GridDashboardState extends State<GridDashboard> {
     img: "assets/images/setting.png",
   );
 
-  void _getUserPosition() async {
-    LocationPermission permission = await Geolocator.checkPermission();
-    Position userLocation = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high);
-
-    setState(() => position = userLocation);
-  }
 @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _getUserPosition();
   }
 
 
@@ -93,12 +82,6 @@ class _GridDashboardState extends State<GridDashboard> {
                     changePageRoute(GeneratePage.routeName);
                   } else if (data.title == "Locations GPS") {
                     //Navigator.pushNamed(context, GPSSaveAndBackground.routeName);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => GPSSaveAndBackground(position),
-                      ),
-                    );
                   } else if (data.title == "Corona19 Info") {
 
                   }

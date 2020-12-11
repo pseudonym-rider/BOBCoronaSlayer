@@ -101,7 +101,7 @@ String createSign() {
     key = keyDB.get(userKey);
   }
   String date = slice(DateTime.now().millisecondsSinceEpoch.toString(), 0, -3);
-  print(date);
+  //print(date);
   //print("$key//$id//$date");
   return "$key//$id//$date";
 }

@@ -9,9 +9,8 @@ import 'constants.dart';
 import 'screens/sign_up/sign_up_screen.dart';
 import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
 import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
-import 'package:BOB_corona_slayer/screens/gps/gps_tracker.dart';
 import 'package:BOB_corona_slayer/screens/home/home_page.dart';
-import 'package:BOB_corona_slayer/screens/gps/GPSSaveAndBackground.dart';
+
 
 // We use name route
 // All our routes will be available here
