@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-is\\values-is.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-is\\values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5496",
+                        "endColumns": "100",
+                        "endOffsets": "5592"
+                    }
+                },
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\3bece456bbd9a72509b6089336508a21\\jetified-play-services-basement-17.0.0\\res\\values-is\\values.xml",
                     "from": {
@@ -35,23 +52,6 @@
                         "startOffsets": "2779,2887,3073,3200,3311,3511,3638,3777,4099,4312,4420,4608,4736,4937,5121,5215,5308",
                         "endColumns": "107,185,126,110,199,126,138,133,212,107,187,127,200,183,93,92,107",
                         "endOffsets": "2882,3068,3195,3306,3506,3633,3772,3906,4307,4415,4603,4731,4932,5116,5210,5303,5411"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\65fd00bb7753452a02d198555191de3e\\core-1.3.0\\res\\values-is\\values-is.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5496",
-                        "endColumns": "100",
-                        "endOffsets": "5592"
                     }
                 },
                 {

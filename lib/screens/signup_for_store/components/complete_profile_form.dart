@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/components/custom_surfix_icon.dart';
-import 'package:BOB_corona_slayer/components/default_button.dart';
-import 'package:BOB_corona_slayer/components/form_error.dart';
-import 'package:BOB_corona_slayer/screens/login_success/login_success_screen.dart';
-import 'package:BOB_corona_slayer/screens/otp/otp_screen.dart';
+import 'package:BOB_infection_slayer/components/custom_surfix_icon.dart';
+import 'package:BOB_infection_slayer/components/default_button.dart';
+import 'package:BOB_infection_slayer/components/form_error.dart';
+import 'package:BOB_infection_slayer/screens/login_success/login_success_screen.dart';
+import 'package:BOB_infection_slayer/screens/otp/otp_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';

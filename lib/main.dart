@@ -1,9 +1,9 @@
-import 'package:BOB_corona_slayer/constants.dart';
-import 'package:BOB_corona_slayer/screens/home/home_page.dart';
+import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/screens/home/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/routes.dart';
-import 'package:BOB_corona_slayer/screens/splash/splash_screen.dart';
-import 'package:BOB_corona_slayer/theme.dart';
+import 'package:BOB_infection_slayer/routes.dart';
+import 'package:BOB_infection_slayer/screens/splash/splash_screen.dart';
+import 'package:BOB_infection_slayer/theme.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 

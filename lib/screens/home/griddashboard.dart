@@ -1,9 +1,9 @@
-import 'package:BOB_corona_slayer/constants.dart';
-import 'package:BOB_corona_slayer/services/commuication.dart';
+import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/services/commuication.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
-import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
+import 'package:BOB_infection_slayer/screens/qr_make/qr_make_page.dart';
+import 'package:BOB_infection_slayer/screens/qr_scan/qr_scan_page.dart';
 
 class GridDashboard extends StatefulWidget {
   String type;
@@ -26,7 +26,7 @@ class _GridDashboardState extends State<GridDashboard> {
   );
 
   Items item3 = new Items(
-    title: "Corona19 Info",
+    title: "Infection Info",
     subtitle: "내 지역의 확진자 상황을 확인합니다.",
     img: "assets/images/festival.png",
   );
@@ -82,7 +82,7 @@ class _GridDashboardState extends State<GridDashboard> {
                     changePageRoute(GeneratePage.routeName);
                   } else if (data.title == "Locations GPS") {
                     //Navigator.pushNamed(context, GPSSaveAndBackground.routeName);
-                  } else if (data.title == "Corona19 Info") {
+                  } else if (data.title == "Infection Info") {
 
                   }
                 },

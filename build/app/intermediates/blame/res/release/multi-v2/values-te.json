@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-te\\values-te.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-te\\values-te.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\3bece456bbd9a72509b6089336508a21\\jetified-play-services-basement-17.0.0\\res\\values-te\\values.xml",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\65fd00bb7753452a02d198555191de3e\\core-1.3.0\\res\\values-te\\values-te.xml",
+                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-te\\values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

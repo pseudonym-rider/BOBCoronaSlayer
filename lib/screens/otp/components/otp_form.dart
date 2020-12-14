@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/components/default_button.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/components/default_button.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 import '../../../constants.dart';
 

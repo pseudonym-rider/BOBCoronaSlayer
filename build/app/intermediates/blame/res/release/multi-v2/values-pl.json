@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\65fd00bb7753452a02d198555191de3e\\core-1.3.0\\res\\values-pl\\values-pl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5640",
-                        "endColumns": "100",
-                        "endOffsets": "5736"
-                    }
-                },
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\3bece456bbd9a72509b6089336508a21\\jetified-play-services-basement-17.0.0\\res\\values-pl\\values.xml",
                     "from": {
@@ -52,6 +35,23 @@
                         "startOffsets": "2817,2923,3123,3247,3359,3569,3696,3837,4164,4394,4505,4711,4841,5059,5250,5349,5445",
                         "endColumns": "105,199,123,111,209,126,140,127,229,110,205,129,217,190,98,95,112",
                         "endOffsets": "2918,3118,3242,3354,3564,3691,3832,3960,4389,4500,4706,4836,5054,5245,5344,5440,5553"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5640",
+                        "endColumns": "100",
+                        "endOffsets": "5736"
                     }
                 },
                 {

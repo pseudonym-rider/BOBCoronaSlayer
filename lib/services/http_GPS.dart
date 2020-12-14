@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:BOB_corona_slayer/models/user_location.dart';
+import 'package:BOB_infection_slayer/models/user_location.dart';
 import 'package:http/http.dart' as http;
 
 // I don't know what type to send for.

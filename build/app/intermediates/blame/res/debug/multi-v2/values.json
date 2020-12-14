@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dldms\\.gradle\\caches\\transforms-2\\files-2.1\\dcd5cfbbf6a58afdda2d064ba6109f93\\material-1.1.0\\res\\values\\values.xml",
@@ -37,25 +37,6 @@
                         "startOffsets": "11911,34706,34759,34812,34865,206778,206954,207076,207338,207533",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "11995,34754,34807,34860,34913,206839,207071,207132,207399,207595"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBCoronaSlayer\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "134,777",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "426,937"
-                    },
-                    "to": {
-                        "startLines": "2593,2646",
-                        "startColumns": "4,4",
-                        "startOffsets": "174367,178168",
-                        "endLines": "2597,2648",
-                        "endColumns": "12,12",
-                        "endOffsets": "174659,178328"
                     }
                 },
                 {
@@ -223,6 +204,25 @@
                         "endLines": "184,185,293,294,295,296,297,298,299,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,583,584,596,597,598,599,600,601,602,603,604,605,609,638,743,3037,3041,3043,3049,3051,3575,3576,5468,5728,5760,5802,5809",
                         "endColumns": "68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,56,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
                         "endOffsets": "11843,11906,19224,19292,19364,19434,19495,19569,19642,33784,33845,33907,33971,34033,34094,34162,34262,34322,34388,34461,34530,34587,34639,34701,35503,35579,35644,35703,35762,35822,35882,35942,36002,36062,36122,36182,36242,36302,36362,36421,36481,36541,36601,36661,36721,36781,36841,36901,36961,37021,37080,37140,37200,37259,37318,37377,37436,37495,37554,37981,38016,38622,38685,38740,38798,38855,38905,38966,39023,39057,39092,39270,40997,54210,206572,206773,206949,207333,207528,244911,244978,353201,368153,370218,372198,372575"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "134,777",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "426,937"
+                    },
+                    "to": {
+                        "startLines": "2593,2646",
+                        "startColumns": "4,4",
+                        "startOffsets": "174367,178168",
+                        "endLines": "2597,2648",
+                        "endColumns": "12,12",
+                        "endOffsets": "174659,178328"
                     }
                 },
                 {

@@ -1,4 +1,4 @@
-com.pseudonymRider.BOB_corona_slayer
+com.pseudonymRider.BOB_infection_slayer
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom

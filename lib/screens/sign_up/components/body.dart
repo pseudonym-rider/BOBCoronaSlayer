@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/components/socal_card.dart';
-import 'package:BOB_corona_slayer/constants.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/components/socal_card.dart';
+import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 import 'sign_up_form.dart';
 

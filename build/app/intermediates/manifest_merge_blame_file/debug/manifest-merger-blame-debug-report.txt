@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.pseudonymRider.BOB_corona_slayer"
+3    package="com.pseudonymRider.BOB_infection_slayer"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -12,49 +12,49 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
-14-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:8:22-64
+14-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:8:22-64
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:5-78
-15-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
+15-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:9:5-78
+15-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
 16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-16-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:5-85
-16-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:10:22-82
+16-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:10:5-85
+16-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:10:22-82
 17    <uses-permission android:name="android.permission.WAKE_LOCK" />
-17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:5-67
-17-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:11:22-65
+17-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:11:22-65
 18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:5-76
-18-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:12:22-74
+18-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:12:5-76
+18-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:12:22-74
 19    <uses-permission android:name="android.permission.CAMERA" />
-19-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-65
-19-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-62
+19-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-65
+19-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-62
 20
 21    <application
-21-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:13:5-60:19
+21-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:13:5-60:19
 22        android:name="io.flutter.app.FlutterApplication"
-22-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:14:9-57
+22-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:14:9-57
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
 24        android:debuggable="true"
 25        android:icon="@mipmap/ic_launcher"
-25-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:16:9-43
-26        android:label="BOB_corona_slayer" >
-26-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:15:9-42
+25-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:16:9-43
+26        android:label="BOB_infection_slayer" >
+26-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:15:9-45
 27        <activity
-27-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:17:9-45:20
-28            android:name="com.example.BOB_corona_slayer.MainActivity"
-28-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:18:13-41
+27-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:17:9-45:20
+28            android:name="com.example.BOB_infection_slayer.MainActivity"
+28-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:18:13-41
 29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-29-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:21:13-163
+29-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:21:13-163
 30            android:hardwareAccelerated="true"
-30-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:22:13-47
+30-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:22:13-47
 31            android:launchMode="singleTop"
-31-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:19:13-43
+31-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:19:13-43
 32            android:theme="@style/LaunchTheme"
-32-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:20:13-47
+32-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:20:13-47
 33            android:windowSoftInputMode="adjustResize" >
-33-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:23:13-55
+33-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:23:13-55
 34
 35            <!--
 36                 Specifies an Android theme to apply to this Activity as soon as
@@ -63,11 +63,11 @@
 39                 to determine the Window background behind the Flutter UI.
 40            -->
 41            <meta-data
-41-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:28:13-31:17
+41-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:28:13-31:17
 42                android:name="io.flutter.embedding.android.NormalTheme"
-42-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:29:15-70
+42-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:29:15-70
 43                android:resource="@style/NormalTheme" />
-43-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:30:15-52
+43-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:30:15-52
 44            <!--
 45                 Displays an Android View that continues showing the launch screen
 46                 Drawable until Flutter paints its first frame, then this splash
@@ -76,21 +76,21 @@
 49                 Flutter's first frame.
 50            -->
 51            <meta-data
-51-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:37:13-40:17
+51-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:37:13-40:17
 52                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-52-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:38:15-79
+52-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:38:15-79
 53                android:resource="@drawable/launch_background" />
-53-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:39:15-61
+53-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:39:15-61
 54
 55            <intent-filter>
-55-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:41:13-44:29
+55-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:41:13-44:29
 56                <action android:name="android.intent.action.MAIN" />
-56-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:42:17-68
-56-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:42:25-66
+56-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:42:17-68
+56-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:42:25-66
 57
 58                <category android:name="android.intent.category.LAUNCHER" />
-58-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:43:17-76
-58-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:43:27-74
+58-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:43:17-76
+58-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:43:27-74
 59            </intent-filter>
 60        </activity>
 61        <!--
@@ -98,41 +98,41 @@
 63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 64        -->
 65        <receiver
-65-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:48:9-50:38
+65-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:48:9-50:38
 66            android:name="rekab.app.background_locator.LocatorBroadcastReceiver"
-66-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:48:19-87
+66-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:48:19-87
 67            android:enabled="true"
-67-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:49:13-35
+67-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:49:13-35
 68            android:exported="true" />
-68-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:50:13-36
+68-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:50:13-36
 69
 70        <service
-70-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:51:9-53:38
+70-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:51:9-53:38
 71            android:name="rekab.app.background_locator.LocatorService"
-71-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:51:18-76
+71-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:51:18-76
 72            android:exported="true"
-72-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:53:13-36
+72-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:53:13-36
 73            android:permission="android.permission.BIND_JOB_SERVICE" />
-73-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:52:13-69
+73-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:52:13-69
 74        <service
-74-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:54:9-56:38
+74-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:54:9-56:38
 75            android:name="rekab.app.background_locator.IsolateHolderService"
-75-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:54:18-82
+75-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:54:18-82
 76            android:exported="true"
-76-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:56:13-36
+76-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:56:13-36
 77            android:permission="android.permission.FOREGROUND_SERVICE" />
-77-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:55:13-71
+77-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:55:13-71
 78
 79        <meta-data
-79-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:57:9-59:33
+79-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:57:9-59:33
 80            android:name="flutterEmbedding"
-80-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:58:13-44
+80-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:58:13-44
 81            android:value="2" />
-81-->C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\android\app\src\main\AndroidManifest.xml:59:13-30
+81-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:59:13-30
 82
 83        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
-83-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-84
-83-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBCoronaSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:19-81
+83-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-84
+83-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:10:19-81
 84        <activity
 84-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 85            android:name="com.google.android.gms.common.api.GoogleApiActivity"

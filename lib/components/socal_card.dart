@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 class SocalCard extends StatelessWidget {
   const SocalCard({

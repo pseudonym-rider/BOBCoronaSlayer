@@ -4,7 +4,7 @@ import 'dart:io' show Platform;
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:BOB_corona_slayer/services/commuication.dart';
+import 'package:BOB_infection_slayer/services/commuication.dart';
 
 class ScanPage extends StatefulWidget {
   static String routeName = "/qr_scan";

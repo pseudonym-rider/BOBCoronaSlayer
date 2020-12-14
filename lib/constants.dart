@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 const kPrimaryColor = Color(0xff81c784);
 const kPrimaryLightColor = Color(0xFFFFECDF);

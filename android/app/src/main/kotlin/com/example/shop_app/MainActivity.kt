@@ -1,4 +1,4 @@
-package com.example.BOB_corona_slayer
+package com.example.BOB_infection_slayer
 
 import io.flutter.embedding.android.FlutterActivity
 

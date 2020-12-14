@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/screens/splash/components/body.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/screens/splash/components/body.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 class SplashScreen extends StatelessWidget {
   static String routeName = "/splash";

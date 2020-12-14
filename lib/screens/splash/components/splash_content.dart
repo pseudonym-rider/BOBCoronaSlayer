@@ -17,7 +17,7 @@ class SplashContent extends StatelessWidget {
       children: <Widget>[
         Spacer(),
         Text(
-          "BoB Corona slayer",
+          "BoB Infection slayer",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(36),
             color: Colors.green,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/components/default_button.dart';
-import 'package:BOB_corona_slayer/screens/sign_in/sign_in_screen.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
-import 'package:BOB_corona_slayer/screens/home/home_page.dart';
+import 'package:BOB_infection_slayer/components/default_button.dart';
+import 'package:BOB_infection_slayer/screens/sign_in/sign_in_screen.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/screens/home/home_page.dart';
 
 class Body extends StatelessWidget {
   @override

@@ -1,15 +1,15 @@
 import 'package:flutter/widgets.dart';
-import 'package:BOB_corona_slayer/screens/signup_for_store/signup_for_store.dart';
-import 'package:BOB_corona_slayer/screens/forgot_password/forgot_password_screen.dart';
-import 'package:BOB_corona_slayer/screens/login_success/login_success_screen.dart';
-import 'package:BOB_corona_slayer/screens/otp/otp_screen.dart';
-import 'package:BOB_corona_slayer/screens/sign_in/sign_in_screen.dart';
-import 'package:BOB_corona_slayer/screens/splash/splash_screen.dart';
+import 'package:BOB_infection_slayer/screens/signup_for_store/signup_for_store.dart';
+import 'package:BOB_infection_slayer/screens/forgot_password/forgot_password_screen.dart';
+import 'package:BOB_infection_slayer/screens/login_success/login_success_screen.dart';
+import 'package:BOB_infection_slayer/screens/otp/otp_screen.dart';
+import 'package:BOB_infection_slayer/screens/sign_in/sign_in_screen.dart';
+import 'package:BOB_infection_slayer/screens/splash/splash_screen.dart';
 import 'constants.dart';
 import 'screens/sign_up/sign_up_screen.dart';
-import 'package:BOB_corona_slayer/screens/qr_make/qr_make_page.dart';
-import 'package:BOB_corona_slayer/screens/qr_scan/qr_scan_page.dart';
-import 'package:BOB_corona_slayer/screens/home/home_page.dart';
+import 'package:BOB_infection_slayer/screens/qr_make/qr_make_page.dart';
+import 'package:BOB_infection_slayer/screens/qr_scan/qr_scan_page.dart';
+import 'package:BOB_infection_slayer/screens/home/home_page.dart';
 
 
 // We use name route

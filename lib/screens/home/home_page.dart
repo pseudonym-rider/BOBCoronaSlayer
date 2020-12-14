@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
-import 'package:BOB_corona_slayer/constants.dart';
-import 'package:BOB_corona_slayer/services/commuication.dart';
+import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/services/commuication.dart';
 import 'package:background_locator/background_locator.dart';
 import 'package:background_locator/location_dto.dart';
 import 'package:background_locator/settings/android_settings.dart';
@@ -75,7 +75,7 @@ class HomeState extends State<Home> {
             distanceFilter: 0,
             androidNotificationSettings: AndroidNotificationSettings(
               notificationChannelName: 'Location tracking',
-              notificationTitle: 'BOB corona slayer',
+              notificationTitle: 'BOB Infection slayer',
               notificationMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
               notificationBigMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
               notificationIcon: '',//'mipmap/teamLogo.PNG',

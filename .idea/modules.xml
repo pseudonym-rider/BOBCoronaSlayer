@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BOBCoronaSlayer.iml" filepath="$PROJECT_DIR$/.idea/BOBCoronaSlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BOBInfectionSlayer.iml" filepath="$PROJECT_DIR$/.idea/BOBInfectionSlayer.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/constants.dart';
-import 'package:BOB_corona_slayer/screens/sign_in/sign_in_screen.dart';
-import 'package:BOB_corona_slayer/size_config.dart';
+import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/screens/sign_in/sign_in_screen.dart';
+import 'package:BOB_infection_slayer/size_config.dart';
 
 // This is the best practice
 import '../components/splash_content.dart';

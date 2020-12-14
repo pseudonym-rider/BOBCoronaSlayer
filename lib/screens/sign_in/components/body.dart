@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/components/no_account_text.dart';
-import 'package:BOB_corona_slayer/components/socal_card.dart';
+import 'package:BOB_infection_slayer/components/no_account_text.dart';
+import 'package:BOB_infection_slayer/components/socal_card.dart';
 import '../../../size_config.dart';
 import 'sign_form.dart';
 import 'package:progress_dialog/progress_dialog.dart';
@@ -19,10 +19,10 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Text(
-                  "BoB Corona slayer",
+                  "BoB Infection slayer",
                   style: TextStyle(
                     color: Colors.green,
-                    fontSize: getProportionateScreenWidth(36),
+                    fontSize: getProportionateScreenWidth(34),
                     fontWeight: FontWeight.bold,
                   ),
                 ),

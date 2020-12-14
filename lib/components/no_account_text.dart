@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:BOB_corona_slayer/screens/sign_up/sign_up_screen.dart';
+import 'package:BOB_infection_slayer/screens/sign_up/sign_up_screen.dart';
 
 import '../constants.dart';
 import '../size_config.dart';

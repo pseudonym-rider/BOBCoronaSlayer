@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:BOB_corona_slayer/constants.dart';
+import 'package:BOB_infection_slayer/constants.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
