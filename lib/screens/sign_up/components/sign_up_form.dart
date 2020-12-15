@@ -25,11 +25,11 @@ class _SignUpFormState extends State<SignUpForm> {
   //bool genderChecker = false;
   String password;
   String conform_password;
+  String license = "";
   bool GPSChecker = false;
   bool personalChecker = false;
   String type = "";
   bool typePersonChecker = false;
-  //bool typeStaffChecker = false;
   bool typeManagerChecker = false;
   final List<String> errors = [];
 
@@ -114,7 +114,7 @@ class _SignUpFormState extends State<SignUpForm> {
               Text('점주'),
             ],
           ),
-          //typeManagerChecker ? buildLicenseFormField() : Container(),
+          typeManagerChecker ? buildLicenseFormField() : Container(),
           Row(
             children: [
               Checkbox(
@@ -177,14 +177,17 @@ class _SignUpFormState extends State<SignUpForm> {
                 //if (!genderChecker)   {addError(error: kGenderCheckNullError); return;}
                 // if all are valid then go to success screen
                 bool isJoin = await Join(ID, password, name, phoneNumber, birth,
-                    gender, type);
+                    gender, type, license);
                 if (!isJoin) {
                   addError(error: kSignUpFailError);
                   return;
                 }
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                /*
                 type == "1"
                     ? Navigator.pushNamed(context, LoginSuccessScreen.routeName)
                     : Navigator.pushNamed(context, SignupForStoreScreen.routeName);
+                 */
               }
             },
           ),
@@ -230,11 +233,6 @@ class _SignUpFormState extends State<SignUpForm> {
         if (value.isNotEmpty) {
           removeError(error: kIDNullError);
         }
-        /*
-        else if (emailValidatorRegExp.hasMatch(value)) {
-          removeError(error: kInvalidEmailError);
-        }
-        */
         return null;
       },
       validator: (value) {
@@ -367,11 +365,6 @@ class _SignUpFormState extends State<SignUpForm> {
         if (value.isNotEmpty) {
           removeError(error: kIDNullError);
         }
-        /*
-        else if (emailValidatorRegExp.hasMatch(value)) {
-          removeError(error: kInvalidEmailError);
-        }
-        */
         return null;
       },
       validator: (value) {
@@ -379,12 +372,6 @@ class _SignUpFormState extends State<SignUpForm> {
           addError(error: kIDNullError);
           return "";
         }
-        /*
-        else if (!emailValidatorRegExp.hasMatch(value)) {
-          addError(error: kInvalidEmailError);
-          return "";
-        }
-        */
         return null;
       },
       decoration: InputDecoration(
@@ -398,6 +385,33 @@ class _SignUpFormState extends State<SignUpForm> {
     );
   }
 
+  TextFormField buildLicenseFormField() {
+    return TextFormField(
+      keyboardType: TextInputType.text,
+      onSaved: (newValue) => license = newValue,
+      onChanged: (value) {
+        if (value.isNotEmpty) {
+          removeError(error: kLicenseNullError);
+        }
+        return null;
+      },
+      validator: (value) {
+        if (value.isEmpty) {
+          addError(error: kLicenseNullError);
+          return "";
+        }
+        return null;
+      },
+      decoration: InputDecoration(
+        labelText: "사업자 등록번호",
+        hintText: "사업자 등록번호를 입력하세요",
+        // If  you are using latest version of flutter then lable text and hint text shown like this
+        // if you r using flutter less then 1.20.* then maybe this is not working properly
+        floatingLabelBehavior: FloatingLabelBehavior.always,
+        suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+      ),
+    );
+  }
 
   bool isPasswordCompliant(String password) {
     if (password == null || password.isEmpty) {

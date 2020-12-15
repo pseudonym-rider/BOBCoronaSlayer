@@ -1,10 +1,7 @@
 import 'dart:convert';
 import 'package:BOB_infection_slayer/constants.dart';
-import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
-import 'package:intl/intl.dart';
-import 'package:jaguar_jwt/jaguar_jwt.dart';
 
 final String url = 'https://api.prider.xyz/';
 final String keyServer = 'https://key.prider.xyz';
@@ -60,7 +57,7 @@ Future<Map> Login(String ID, String password, bool remember) async {
 }
 
 Future<bool> Join(String ID, String password, String name, String phoneNumber,
-    String birth, String gender, String type) async {
+    String birth, String gender, String type, String license) async {
   String addr = url + 'join';
   Map<String, dynamic> data = {
     "user_id": ID,
@@ -71,7 +68,7 @@ Future<bool> Join(String ID, String password, String name, String phoneNumber,
     "gender": gender,
     "type": type,
   };
-  //if (type == "2") data['license'] = license;
+  if (type == "2") data['license'] = license;
   String json = jsonEncode(data);
   print(json);
 
@@ -97,7 +94,7 @@ String createSign() {
   //String addr = keyServer + '/get-sign';
   if (key == null) {
     print("키가없어용");
-    getUserKey(userDB.get(userName), userDB.get(userType));
+    getUserKey(userDB.get(userName), "1");
     key = keyDB.get(userKey);
   }
   String date = slice(DateTime.now().millisecondsSinceEpoch.toString(), 0, -3);
@@ -107,8 +104,8 @@ String createSign() {
 }
 
 Future<void> getUserKey(String ID, String type) async {
-  //String addr = keyServer + '/issue-key';
-  String addr = testURL + '/request/issue-key';
+  String addr = keyServer + '/request/issue-key';
+  //String addr = testURL + '/request/issue-key';
   Map<String, dynamic> data = {
     //"user_id" : ID,
     "id": ID,
@@ -136,7 +133,7 @@ Future<void> getUserKey(String ID, String type) async {
   } else {
     print(response.statusCode);
     Map userMap = jsonDecode(response.body);
-    print(userMap['code']);
+    print(userMap);
     return false;
   }
 }
@@ -160,8 +157,8 @@ Future<void> getAccessToken() async {
 }
 
 Future<void> fetchGPS(String time, String gps) async {
-  //String addr = url + 'fetch_gps';
-  String addr = 'http://35.188.48.200:5000/post-gps';
+  String addr = url + 'fetch_gps';
+  //String addr = 'http://35.188.48.200:5000/post-gps';
   Map<String, dynamic> data = {"time": time, "gps": gps};
   String json = jsonEncode(data);
   print(json);
@@ -169,8 +166,46 @@ Future<void> fetchGPS(String time, String gps) async {
   var response = await http.post(addr, headers: headers, body: json);
 }
 
+Future<List<String>> fetchLocation(String ID) async {
+  String addr = url + 'fetch_location';
+  Map<String, dynamic> data = {"user_id" : ID};
+  String json = jsonEncode(data);
+  print(json);
+
+  var response = await http.post(addr, headers: headers, body: json);
+
+  if (response.statusCode == 200) {
+    Map userMap = jsonDecode(response.body);
+    return null;
+    //값 오면 뭐로 받을지 상의해야댐
+  } else {
+    print(response.statusCode);
+    Map userMap = jsonDecode(response.body);
+    print(userMap['code']);
+    return null;
+  }
+}
+
+Future<List<String>> fetchInfomation() async {
+  String addr = url + 'fetch_infomation';
+
+  var response = await http.get(addr, headers: headers);
+
+  if (response.statusCode == 200) {
+    Map userMap = jsonDecode(response.body);
+    return null;
+    //값 오면 뭐로 받을지 상의해야댐
+  } else {
+    print(response.statusCode);
+    Map userMap = jsonDecode(response.body);
+    print(userMap['code']);
+    return null;
+  }
+}
+
 Future<bool> readQRCode(String qrCode) async {
-  String addr = testURL + "/receive-qr";
+  //String addr = testURL + "/receive-qr";
+  String addr = keyServer + "/receive-qr";
   try {
     String userQRUsk = qrCode.split("//")[0];
     String userQRID = qrCode.split("//")[1];
@@ -188,7 +223,8 @@ Future<bool> readQRCode(String qrCode) async {
     var response = await http.post(addr, headers: headers, body: json);
     print("after");
     if (response.statusCode == 200) {
-      print("nice!");
+      Map userMap = jsonDecode(response.body);
+      if (userMap['response'] == false) return false;
       return true;
     } else {
       Map userMap = jsonDecode(response.body);

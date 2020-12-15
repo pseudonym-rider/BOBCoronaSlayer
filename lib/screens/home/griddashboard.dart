@@ -1,8 +1,9 @@
 import 'package:BOB_infection_slayer/constants.dart';
+import 'package:BOB_infection_slayer/screens/infection_info/infection_info.dart';
+import 'package:BOB_infection_slayer/screens/roadmap/qr_roadmap.dart';
 import 'package:BOB_infection_slayer/services/commuication.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:BOB_infection_slayer/screens/qr_make/qr_make_page.dart';
 import 'package:BOB_infection_slayer/screens/qr_scan/qr_scan_page.dart';
 
 class GridDashboard extends StatefulWidget {
@@ -55,7 +56,6 @@ class _GridDashboardState extends State<GridDashboard> {
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
     List<Items> myList = [item1, item2, item3, item4, item6];
@@ -79,11 +79,9 @@ class _GridDashboardState extends State<GridDashboard> {
                     await getUserKey(widget.ID, widget.type);
                     changePageRoute(ScanPage.routeName);
                   } else if (data.title == "QR Roadmap") {
-                    changePageRoute(GeneratePage.routeName);
-                  } else if (data.title == "Locations GPS") {
-                    //Navigator.pushNamed(context, GPSSaveAndBackground.routeName);
+                    changePageRoute(QRRoadmapPage.routeName);
                   } else if (data.title == "Infection Info") {
-
+                    changePageRoute(InfectionInfoPage.routeName);
                   }
                 },
                 child: Column(

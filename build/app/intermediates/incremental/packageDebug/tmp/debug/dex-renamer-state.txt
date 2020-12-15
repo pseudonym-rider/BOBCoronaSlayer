@@ -1,4 +1,4 @@
-#Mon Dec 14 15:41:19 KST 2020
+#Tue Dec 15 01:23:59 KST 2020
 base.0=C\:\\Users\\dldms\\AndroidStudioProjects\\BOBInfectionSlayer\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex
