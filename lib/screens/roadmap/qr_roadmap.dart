@@ -32,7 +32,7 @@ class QRRoadmapPageState extends State<QRRoadmapPage> {
           })
           : Center(
         child: CircularProgressIndicator(
-          valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+          valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
         ),
       )
     );

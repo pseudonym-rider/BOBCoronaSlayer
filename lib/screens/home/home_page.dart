@@ -15,6 +15,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'griddashboard.dart';
 import 'package:flutter/services.dart';
+import 'notification.dart' as notif;
 
 class Home extends StatefulWidget {
   static String routeName = "/home";
@@ -33,22 +34,37 @@ class HomeState extends State<Home> {
   ReceivePort port = ReceivePort();
   @override
   void initState() {
+    /*
     IsolateNameServer.registerPortWithName(port.sendPort, _isolateName);
-    port.listen((dynamic location) {
+    port.listen((dynamic location) async {
+
       String userLocation =
           "Latitude: ${location.latitude}, Longitude: ${location.longitude}";
       String date = DateFormat('yyyy-MM-ddTHH:mm:ss').format(DateTime.now());
-      print("userLocation: $userLocation");
+      //print("userLocation: $userLocation");
       GPSDB.put(date, userLocation);
+      //나중에 풀기
+
+      bool isInfected = await requestInfection();
+
+      if (isInfected == true) {
+        notif.Notification notification = new notif.Notification();
+        notification.showNotificationWithoutSound(widget.name);
+        GPSDB.keys.toList().forEach((time) {
+          fetchGPS(time, GPSDB.get(time));
+        });
+      }
+
     });
     initPlatformState();
     startCollectGPS();
+     */
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       getUserKey(widget.ID, widget.type);
+      getAccessToken();
+      makeQRCode();
     });
-    makeQRCode();
-
   }
 
   Future<void> initPlatformState() async {
@@ -74,15 +90,13 @@ class HomeState extends State<Home> {
             interval: 60,
             distanceFilter: 0,
             androidNotificationSettings: AndroidNotificationSettings(
-              notificationChannelName: 'Location tracking',
-              notificationTitle: 'BOB Infection slayer',
-              notificationMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
-              notificationBigMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
-              notificationIcon: '',//'mipmap/teamLogo.PNG',
-              notificationIconColor: Colors.grey,
-                notificationTapCallback:
-                notificationCallback
-            )));
+                notificationChannelName: 'Location tracking',
+                notificationTitle: 'BOB Infection slayer',
+                notificationMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
+                notificationBigMsg: 'GPS 정보를 로컬로 수집하는중입니다.',
+                notificationIcon: '', //'mipmap/teamLogo.PNG',
+                notificationIconColor: Colors.grey,
+                notificationTapCallback: notificationCallback)));
   }
 
   @override
@@ -139,7 +153,7 @@ class HomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              qrText.split('-')[0] == "null"
+            qrText == null || qrText.split('//')[0] == "null"
                   ? CircularProgressIndicator()
                   : QrImage(
                       data: qrText,
@@ -178,6 +192,9 @@ class HomeState extends State<Home> {
           leftSecond = 15;
           print("15초 만료 재발급");
           qrText = createSign();
+        }
+        else if (leftSecond == 2) {
+          getAccessToken();
         }
         setState(() {});
       });

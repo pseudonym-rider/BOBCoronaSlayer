@@ -1,18 +1,22 @@
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:24
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:28
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:29
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:92
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:91
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:33
 -keep class com.example.BOB_infection_slayer.MainActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:86
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:101
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:85
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:89
 -keep class de.mintware.barcode_scan.BarcodeScannerActivity { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:24
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:28
 -keep class io.flutter.app.FlutterApplication { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:76
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:80
 -keep class rekab.app.background_locator.IsolateHolderService { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:67
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:71
 -keep class rekab.app.background_locator.LocatorBroadcastReceiver { <init>(); }
-# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\arm64-v8a\AndroidManifest.xml:72
+# Referenced at C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:76
 -keep class rekab.app.background_locator.LocatorService { <init>(); }
 # Referenced at C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\res\layout-watch-v20\abc_alert_dialog_title_material.xml:53
 # Referenced at C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\res\layout\mtrl_alert_dialog_title.xml:41

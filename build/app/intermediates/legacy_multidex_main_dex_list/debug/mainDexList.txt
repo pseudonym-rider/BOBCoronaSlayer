@@ -88,6 +88,7 @@ androidx/core/app/NotificationCompat$BadgeIconType.class
 androidx/core/app/NotificationCompat$GroupAlertBehavior.class
 androidx/core/app/NotificationCompat$NotificationVisibility.class
 androidx/core/app/NotificationCompat$StreamType.class
+androidx/core/app/RemoteInput$EditChoicesBeforeSending.class
 androidx/core/app/RemoteInput$Source.class
 androidx/core/app/ServiceCompat$StopForegroundFlags.class
 androidx/core/content/PermissionChecker$PermissionResult.class
@@ -109,6 +110,7 @@ androidx/lifecycle/Lifecycle$Event.class
 androidx/lifecycle/OnLifecycleEvent.class
 androidx/media/AudioAttributesCompat$AttributeContentType.class
 androidx/media/AudioAttributesCompat$AttributeUsage.class
+androidx/media/AudioFocusRequestCompat$FocusGainType.class
 androidx/media/VolumeProviderCompat$ControlType.class
 androidx/multidex/MultiDex$V14$ElementConstructor.class
 androidx/multidex/MultiDex$V14$ICSElementConstructor.class
@@ -139,6 +141,9 @@ androidx/viewpager/widget/ViewPager$DecorView.class
 androidx/viewpager2/widget/ViewPager2$OffscreenPageLimit.class
 androidx/viewpager2/widget/ViewPager2$Orientation.class
 androidx/viewpager2/widget/ViewPager2$ScrollState.class
+com/baseflow/permissionhandler/PermissionConstants$PermissionGroup.class
+com/baseflow/permissionhandler/PermissionConstants$PermissionStatus.class
+com/baseflow/permissionhandler/PermissionConstants$ServiceStatus.class
 com/google/android/gms/common/GoogleSignatureVerifier.class
 com/google/android/gms/common/SignInButton$ButtonSize.class
 com/google/android/gms/common/SignInButton$ColorScheme.class

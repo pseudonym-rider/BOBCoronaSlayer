@@ -96,6 +96,7 @@ class _ScanPageState extends State<ScanPage> {
                     padding: EdgeInsets.all(15.0),
                     onPressed: () async {
                       ScanResult result;
+                      await getAccessToken();
                       result = await scanQRCode();
                       if (result.rawContent != "") {
                         _isvaild = await readQRCode(result.rawContent);
@@ -106,6 +107,7 @@ class _ScanPageState extends State<ScanPage> {
                         await Future.delayed(Duration(seconds: 1));
                       }
                       while (result.rawContent != "") {
+                        await getAccessToken();
                         result = await scanQRCode();
                         if (result.rawContent == "") {
                           setState(() {

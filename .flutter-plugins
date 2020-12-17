@@ -1,7 +1,9 @@
 # This is a generated file; do not edit or check into version control.
 background_locator=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\background_locator-1.3.0+1\\
 barcode_scan=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\barcode_scan-3.0.1\\
+flutter_local_notifications=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_local_notifications-3.0.2\\
 path_provider=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.24\\
 path_provider_linux=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
 path_provider_macos=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+6\\
 path_provider_windows=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.4+3\\
+permission_handler=C:\\app\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\permission_handler-5.0.1+1\\

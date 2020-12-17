@@ -44,7 +44,7 @@ class InfectionInfoPageState extends State<InfectionInfoPage> {
                 })
             : Center(
           child: CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
           ),
         )
     );

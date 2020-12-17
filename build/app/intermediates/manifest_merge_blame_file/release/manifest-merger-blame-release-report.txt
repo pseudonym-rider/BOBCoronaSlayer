@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.pseudonymRider.BOB_infection_slayer"
-4    android:versionCode="4001"
-5    android:versionName="1.0.0" >
+4    android:versionCode="2"
+5    android:versionName="1.0.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="18"
@@ -19,139 +19,165 @@
 17    <uses-permission android:name="android.permission.INTERNET" />
 17-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:8:5-67
 17-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:8:22-64
-18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-18-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:9:5-78
-18-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:9:22-76
-19    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-19-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:10:5-85
-19-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:10:22-82
-20    <uses-permission android:name="android.permission.WAKE_LOCK" />
-20-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:11:5-67
-20-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:11:22-65
-21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-21-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:12:5-76
-21-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:12:22-74
-22    <uses-permission android:name="android.permission.CAMERA" />
-22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:5-65
-22-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:22-62
-23
-24    <application
-24-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:13:5-60:19
-25        android:name="io.flutter.app.FlutterApplication"
-25-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:14:9-57
-26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.1.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
-27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:16:9-43
-28        android:label="BOB_infection_slayer" >
-28-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:15:9-45
-29        <activity
-29-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:17:9-45:20
-30            android:name="com.example.BOB_infection_slayer.MainActivity"
-30-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:18:13-41
-31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-31-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:21:13-163
-32            android:hardwareAccelerated="true"
-32-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:22:13-47
-33            android:launchMode="singleTop"
-33-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:19:13-43
-34            android:theme="@style/LaunchTheme"
-34-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:20:13-47
-35            android:windowSoftInputMode="adjustResize" >
-35-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:23:13-55
-36
-37            <!--
-38                 Specifies an Android theme to apply to this Activity as soon as
-39                 the Android process has started. This theme is visible to the user
-40                 while the Flutter UI initializes. After that, this theme continues
-41                 to determine the Window background behind the Flutter UI.
-42            -->
-43            <meta-data
-43-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:28:13-31:17
-44                android:name="io.flutter.embedding.android.NormalTheme"
-44-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:29:15-70
-45                android:resource="@style/NormalTheme" />
-45-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:30:15-52
-46            <!--
-47                 Displays an Android View that continues showing the launch screen
-48                 Drawable until Flutter paints its first frame, then this splash
-49                 screen fades out. A splash screen is useful to avoid any visual
-50                 gap between the end of Android's launch screen and the painting of
-51                 Flutter's first frame.
-52            -->
-53            <meta-data
-53-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:37:13-40:17
-54                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-54-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:38:15-79
-55                android:resource="@drawable/launch_background" />
-55-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:39:15-61
-56
-57            <intent-filter>
-57-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:41:13-44:29
-58                <action android:name="android.intent.action.MAIN" />
-58-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:42:17-68
-58-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:42:25-66
-59
-60                <category android:name="android.intent.category.LAUNCHER" />
-60-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:43:17-76
-60-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:43:27-74
-61            </intent-filter>
-62        </activity>
-63        <!--
-64             Don't delete the meta-data below.
-65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-66        -->
-67        <receiver
-67-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:48:9-50:38
-68            android:name="rekab.app.background_locator.LocatorBroadcastReceiver"
-68-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:48:19-87
-69            android:enabled="true"
-69-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:49:13-35
-70            android:exported="true" />
-70-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:50:13-36
-71
-72        <service
-72-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:51:9-53:38
-73            android:name="rekab.app.background_locator.LocatorService"
-73-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:51:18-76
-74            android:exported="true"
-74-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:53:13-36
-75            android:permission="android.permission.BIND_JOB_SERVICE" />
-75-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:52:13-69
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:5-65
+18-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:7:22-62
+19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+19-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
+19-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:5-66
+20-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:22-63
+21    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+21-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+21-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+22    <!--
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+24    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+25    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+27    -->
+28    <application
+28-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:15:5-62:19
+29        android:name="io.flutter.app.FlutterApplication"
+29-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:16:9-57
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.3.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\65fd00bb7753452a02d198555191de3e\core-1.3.0\AndroidManifest.xml:24:18-86
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:18:9-43
+32        android:label="BOB_infection_slayer" >
+32-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:17:9-45
+33        <activity
+33-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:19:9-47:20
+34            android:name="com.example.BOB_infection_slayer.MainActivity"
+34-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:20:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:23:13-163
+36            android:hardwareAccelerated="true"
+36-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:24:13-47
+37            android:launchMode="singleTop"
+37-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:21:13-43
+38            android:theme="@style/LaunchTheme"
+38-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:22:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:25:13-55
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:30:13-33:17
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:31:15-70
+49                android:resource="@style/NormalTheme" />
+49-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:32:15-52
+50            <!--
+51                 Displays an Android View that continues showing the launch screen
+52                 Drawable until Flutter paints its first frame, then this splash
+53                 screen fades out. A splash screen is useful to avoid any visual
+54                 gap between the end of Android's launch screen and the painting of
+55                 Flutter's first frame.
+56            -->
+57            <meta-data
+57-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:39:13-42:17
+58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+58-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:40:15-79
+59                android:resource="@drawable/launch_background" />
+59-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:41:15-61
+60
+61            <intent-filter>
+61-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:43:13-46:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:44:17-68
+62-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:44:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:45:17-76
+64-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:45:27-74
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <receiver
+71-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:50:9-52:38
+72            android:name="rekab.app.background_locator.LocatorBroadcastReceiver"
+72-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:50:19-87
+73            android:enabled="true"
+73-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:51:13-35
+74            android:exported="true" />
+74-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:52:13-36
+75
 76        <service
-76-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:54:9-56:38
-77            android:name="rekab.app.background_locator.IsolateHolderService"
-77-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:54:18-82
+76-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:53:9-55:38
+77            android:name="rekab.app.background_locator.LocatorService"
+77-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:53:18-76
 78            android:exported="true"
-78-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:56:13-36
-79            android:permission="android.permission.FOREGROUND_SERVICE" />
-79-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:55:13-71
-80
-81        <meta-data
-81-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:57:9-59:33
-82            android:name="flutterEmbedding"
-82-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:58:13-44
-83            android:value="2" />
-83-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:59:13-30
+78-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:55:13-36
+79            android:permission="android.permission.BIND_JOB_SERVICE" />
+79-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:54:13-69
+80        <service
+80-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:56:9-58:38
+81            android:name="rekab.app.background_locator.IsolateHolderService"
+81-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:56:18-82
+82            android:exported="true"
+82-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:58:13-36
+83            android:permission="android.permission.FOREGROUND_SERVICE" />
+83-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:57:13-71
 84
-85        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
-85-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:9-84
-85-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:19-81
-86        <activity
-86-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-87            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-87-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-88            android:exported="false"
-88-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-89-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+85        <meta-data
+85-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:59:9-61:33
+86            android:name="flutterEmbedding"
+86-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:60:13-44
+87            android:value="2" />
+87-->C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\android\app\src\main\AndroidManifest.xml:61:13-30
+88
+89        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
+89-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:9-84
+89-->[:barcode_scan] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\barcode_scan\intermediates\library_manifest\release\AndroidManifest.xml:10:19-81
 90
-91        <meta-data
-91-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-92            android:name="com.google.android.gms.version"
-92-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-93            android:value="@integer/google_play_services_version" />
-93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-94    </application>
-95
-96</manifest>
+91        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+91-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:9-106
+91-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:19-103
+92        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+92-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:9-20:20
+92-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:19-107
+93            <intent-filter>
+93-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:14:13-19:29
+94                <action android:name="android.intent.action.BOOT_COMPLETED" />
+94-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:17-79
+94-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:25-76
+95                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+95-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:17-84
+95-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:25-81
+96                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+96-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:17-82
+96-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:25-79
+97                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+97-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:17-82
+97-->[:flutter_local_notifications] C:\Users\dldms\AndroidStudioProjects\BOBInfectionSlayer\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:25-79
+98            </intent-filter>
+99        </receiver>
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+105
+106        <meta-data
+106-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+107            android:name="com.google.android.gms.version"
+107-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+108            android:value="@integer/google_play_services_version" />
+108-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\dldms\.gradle\caches\transforms-2\files-2.1\3bece456bbd9a72509b6089336508a21\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+109    </application>
+110
+111</manifest>

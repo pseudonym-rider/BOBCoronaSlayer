@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:BOB_infection_slayer/constants.dart';
+import 'package:flutter/foundation.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 
@@ -12,9 +13,15 @@ Map<String, String> testHeaders = {
   'Content-Type': 'application/json;charset=UTF-8',
   'Charset': 'utf-8'
 };
-final Map<String, String> tokenHeaders = {
+
+Map<String, String> accessTokenHeaders = {
   "Content-type": "application/json",
   'Authorization': 'Bearer ${userDB.get(userAccessToken)}',
+};
+
+final Map<String, String> refreshTokenHeaders = {
+  "Content-type": "application/json",
+  'Authorization': 'Bearer ${userDB.get(userRefreshToken)}',
 };
 
 Future<Map> Login(String ID, String password, bool remember) async {
@@ -34,14 +41,13 @@ Future<Map> Login(String ID, String password, bool remember) async {
     print(successMap);
     //print(remember);
     if (successMap['code'] == 0) {
-      if (remember) {
-        await userDB.put(userID, ID);
-        await userDB.put(userName, successMap['user_name']);
-        await userDB.put(userType, successMap['type']);
-        await userDB.put(userAccessToken, successMap['access_token']);
-        await userDB.put(userRefreshToken, successMap['refresh_token']);
-        await getUserKey(ID, "1");
-      }
+      await userDB.put(userID, ID);
+      await userDB.put(userName, successMap['user_name']);
+      await userDB.put(userType, successMap['type']);
+      await userDB.put(userAccessToken, successMap['access_token']);
+      await userDB.put(userRefreshToken, successMap['refresh_token']);
+      await getUserKey(ID, "1");
+
       return successMap;
     } else {
       Map failMap = successMap;
@@ -89,32 +95,30 @@ Future<bool> Join(String ID, String password, String name, String phoneNumber,
 
 String createSign() {
   String key = keyDB.get(userKey);
-  String id = userDB.get(userID);
+  String token = userDB.get(userAccessToken);
+
+  if(token == null) {
+    print("토큰이 없어용");
+    getAccessToken();
+    token = userDB.get(userAccessToken);
+  }
   //print("key: $key");
-  //String addr = keyServer + '/get-sign';
   if (key == null) {
     print("키가없어용");
     getUserKey(userDB.get(userName), "1");
     key = keyDB.get(userKey);
   }
   String date = slice(DateTime.now().millisecondsSinceEpoch.toString(), 0, -3);
-  //print(date);
-  //print("$key//$id//$date");
-  return "$key//$id//$date";
+  print("key: $key");
+  print("token: $token");
+  return "$key//$token//$date";
 }
 
 Future<void> getUserKey(String ID, String type) async {
-  String addr = keyServer + '/request/issue-key';
-  //String addr = testURL + '/request/issue-key';
-  Map<String, dynamic> data = {
-    //"user_id" : ID,
-    "id": ID,
-    "type": type
-  };
-  String json = jsonEncode(data);
-  print("getuserkey: " + json);
-
-  var response = await http.post(addr, headers: headers, body: json);
+  String addr = keyServer + '/issue-key?type=$type';
+  print(addr);
+  print(accessTokenHeaders);
+  var response = await http.get(addr, headers: accessTokenHeaders);
 
   if (response.statusCode == 200) {
     Map userMap = jsonDecode(response.body);
@@ -123,35 +127,37 @@ Future<void> getUserKey(String ID, String type) async {
       print("개인 그룹 개인키 받는중");
       await keyDB.put(userKey, userMap["usk"]);
       await keyDB.put(groupKey, userMap["gpk"]);
+      print('userKey: ${userMap["usk"]}');
     }
     if (type == "2" && keyDB.get(storeUsk) == null) {
       print("점포 그룹 개인키 받는중");
       await keyDB.put(storeUsk, userMap["usk"]);
       await keyDB.put(storeGpk, userMap["gpk"]);
+      print('storeUsk: ${userMap["usk"]}');
     }
     return true;
   } else {
     print(response.statusCode);
     Map userMap = jsonDecode(response.body);
-    print(userMap);
+    print("failResponse: $userMap");
     return false;
   }
 }
 
 Future<void> getAccessToken() async {
   String addr = url + 'refresh';
-  var response = await http.get(addr, headers: tokenHeaders);
+  var response = await http.get(addr, headers: refreshTokenHeaders);
 
   if (response.statusCode == 200) {
     Map userMap = jsonDecode(response.body);
-    print(userMap['access_token']);
+    //print("access_token: ${userMap['access_token']}");
     if (userMap['id'] != userDB.get(userID)) return false;
     await userDB.put(userAccessToken, userMap['access_token']);
     return true;
   } else {
     print(response.statusCode);
     Map userMap = jsonDecode(response.body);
-    print(userMap['code']);
+    print("failResponse: $userMap");
     return false;
   }
 }
@@ -168,7 +174,7 @@ Future<void> fetchGPS(String time, String gps) async {
 
 Future<List<String>> fetchLocation(String ID) async {
   String addr = url + 'fetch_location';
-  Map<String, dynamic> data = {"user_id" : ID};
+  Map<String, dynamic> data = {"user_id": ID};
   String json = jsonEncode(data);
   print(json);
 
@@ -181,7 +187,7 @@ Future<List<String>> fetchLocation(String ID) async {
   } else {
     print(response.statusCode);
     Map userMap = jsonDecode(response.body);
-    print(userMap['code']);
+    print("failResponse: $userMap");
     return null;
   }
 }
@@ -198,42 +204,72 @@ Future<List<String>> fetchInfomation() async {
   } else {
     print(response.statusCode);
     Map userMap = jsonDecode(response.body);
-    print(userMap['code']);
+    print("failResponse: $userMap");
     return null;
   }
 }
 
 Future<bool> readQRCode(String qrCode) async {
-  //String addr = testURL + "/receive-qr";
   String addr = keyServer + "/receive-qr";
   try {
     String userQRUsk = qrCode.split("//")[0];
-    String userQRID = qrCode.split("//")[1];
+    String userQRAccessToken = qrCode.split("//")[1];
     String createQRTime = qrCode.split("//")[2];
-    print(keyDB.get(storeUsk));
     Map<String, dynamic> data = {
-      "user-id": userQRID,
-      "store-id": userDB.get(userID),
+      "user_token": userQRAccessToken,
+      "store_token": userDB.get(userAccessToken),
       "time": createQRTime,
-      "user-secret": userQRUsk,
-      "store-secret": keyDB.get(storeUsk)
+      "user_secret": userQRUsk,
+      "store_secret": keyDB.get(storeUsk)
     };
+    print("user_token: $userQRAccessToken");
+    print("store_token: ${userDB.get(userAccessToken)}");
+    print("time: $createQRTime");
+    print("user_secret: $userQRUsk");
+    print("store_secret: ${keyDB.get(storeUsk)}");
     String json = jsonEncode(data);
-    print(json);
+    //print(json);
     var response = await http.post(addr, headers: headers, body: json);
     print("after");
     if (response.statusCode == 200) {
       Map userMap = jsonDecode(response.body);
-      if (userMap['response'] == false) return false;
+      if (userMap['response'] == false) {
+        await getAccessToken();
+        return false;
+      }
       return true;
     } else {
+      print(response.statusCode);
       Map userMap = jsonDecode(response.body);
-      print("failed: $userMap");
+      print("failResponse: $userMap");
       return false;
     }
   } catch (error) {
     print("error: $error");
     print("wow");
+    return false;
+  }
+}
+
+Future<bool> requestInfection() async {
+  String addr = url + '/request_infection';
+  getAccessToken();
+  accessTokenHeaders = {
+    "Content-type": "application/json",
+    'Authorization': 'Bearer ${userDB.get(userAccessToken)}',
+  };
+  var response = await http.get(addr, headers: accessTokenHeaders);
+
+  if (response.statusCode == 200) {
+    Map userMap = jsonDecode(response.body);
+    if (userMap['code'] == 1)
+      return true;
+    else
+      return false;
+  } else {
+    print(response.statusCode);
+    Map userMap = jsonDecode(response.body);
+    print("failResponse: $userMap");
     return false;
   }
 }
